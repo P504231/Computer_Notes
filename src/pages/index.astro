@@ -1,11 +1,100 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Header from '../components/react/Header';
+import Sidebar from '../components/react/Sidebar';
+import Accordion from '../components/react/Accordion';
+import { notes } from '../data/notes.js';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Computer Awareness - Complete Study Material">
+    <div id="react-root">
+        <Header />
+        
+        <div class="app-layout">
+            <Sidebar 
+                client:load
+                isOpen={false}
+                onToggle={() => {}} 
+            />
+            
+            <main class="main-content">
+                <div class="container">
+                    <div class="content-area">
+                        <div class="welcome-section">
+                            <div class="welcome-content">
+                                <h1>Computer Awareness Study Material</h1>
+                                <p class="subtitle">Complete guide for SSC, Banking, Railway, and other competitive exams</p>
+                                <div class="stats">
+                                    <div class="stat">
+                                        <i class="fas fa-book"></i>
+                                        <span>{notes.length}+ Topics</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Exam Focused</span>
+                                    </div>
+                                    <div class="stat">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <span>Structured Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="topics-section">
+                            <h2 class="section-heading">All Topics</h2>
+                            <div class="accordions-container">
+                                {notes.map(note => (
+                                    <Accordion 
+                                        client:load
+                                        key={note.id}
+                                        id={note.id}
+                                        title={note.title}
+                                        content={note.content}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2024 Computer Awareness. Made with <i class="fas fa-heart"></i> for students.</p>
+            <div class="footer-links">
+                <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
+                <a href="/terms-of-service" class="footer-link">Terms of Service</a>
+                <a href="/contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Computer Awareness loaded');
+            
+            // Initialize sidebar toggle for mobile
+            const sidebarToggle = document.querySelector('.sidebar-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            
+            if (sidebarToggle && sidebar) {
+                sidebarToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('open');
+                });
+            }
+            
+            // Close sidebar when clicking on overlay (if exists)
+            const sidebarOverlay = document.querySelector('.sidebar-overlay');
+            if (sidebarOverlay) {
+                sidebarOverlay.addEventListener('click', () => {
+                    sidebar.classList.remove('open');
+                });
+            }
+        });
+    </script>
 </Layout>
