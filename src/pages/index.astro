@@ -44,15 +44,15 @@ import { notes } from '../data/notes.js';
                         <div class="topics-section">
                             <h2 class="section-heading">All Topics</h2>
                             <div class="accordions-container">
-                                {notes.map(note => (
-                                    <Accordion 
-                                        client:load
-                                        key={note.id}
-                                        id={note.id}
-                                        title={note.title}
-                                        content={note.content}
-                                    />
-                                ))}
+                                
+{notes.map(note => (
+    <Accordion 
+        client:load
+        id={note.id}
+        title={note.title}
+        content={note.content}
+    />
+))}
                             </div>
                         </div>
                     </div>
@@ -75,26 +75,35 @@ import { notes } from '../data/notes.js';
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Computer Awareness loaded');
-            
-            // Initialize sidebar toggle for mobile
-            const sidebarToggle = document.querySelector('.sidebar-toggle');
-            const sidebar = document.querySelector('.sidebar');
-            
-            if (sidebarToggle && sidebar) {
-                sidebarToggle.addEventListener('click', () => {
-                    sidebar.classList.toggle('open');
-                });
-            }
-            
-            // Close sidebar when clicking on overlay (if exists)
-            const sidebarOverlay = document.querySelector('.sidebar-overlay');
-            if (sidebarOverlay) {
-                sidebarOverlay.addEventListener('click', () => {
-                    sidebar.classList.remove('open');
-                });
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Computer Awareness loaded');
+    
+    // Initialize sidebar toggle for mobile
+    const sidebarToggle = document.querySelector('.sidebar-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay');
+    
+    if (sidebarToggle && sidebar) {
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+        });
+    }
+    
+    if (sidebarOverlay && sidebar) {
+        sidebarOverlay.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+        });
+    }
+    
+    // Close sidebar when clicking nav items on mobile
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            if (window.innerWidth <= 1024 && sidebar) {
+                sidebar.classList.remove('open');
             }
         });
-    </script>
+    });
+});
+</script>
 </Layout>
