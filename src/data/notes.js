@@ -30,20 +30,102 @@ export const notes = [
     title: "History of Computers",
     content: `
       <h3>Timeline of Computer Evolution</h3>
-      <ul>
-        <li>Abacus: First calculating device</li>
-        <li>1642: Blaise Pascal - First digital mechanical computer</li>
-        <li>1833: Charles Babbage - Father of Computer</li>
-        <li>1942: ENIAC - First high-speed electronic computer</li>
-        <li>1950: Magnetic memory introduced</li>
-        <li>1980: Semiconductor chips introduced</li>
-      </ul>
+      <table class="comparison-table">
+        <tr>
+          <th>Era/Device</th>
+          <th>Approx. Year</th>
+          <th>Inventory/Developer</th>
+          <th>Key Feature</th>
+        </tr>
+        <tr>
+          <td>Abacus</td>
+          <td>3000 BC</td>
+          <td>China</td>
+          <td>Mechanical calculation</td>
+        </tr>
+        <tr>
+          <td>Napier's Bones</td>
+          <td>1617</td>
+          <td>John Napier</td>
+          <td>Multiplication, division</td>
+        </tr>
+        <tr>
+          <td>Pascaline</td>
+          <td>1642</td>
+          <td>Blaise Pascal</td>
+          <td>Addition, subtraction</td>
+        </tr>
+        <tr>
+          <td>Analytical Engine</td>
+          <td>1837</td>
+          <td>Charles Babbage</td>
+          <td>First general-purpose computing concept (programmable)</td>
+        </tr>
+        <tr>
+          <td>Tabulating Machine</td>
+          <td>1890</td>
+          <td>Herman Hollerith & James Powers</td>
+          <td>Used punch cards to read and tabulate data</td>
+        </tr>
+        <tr>
+          <td>Turing Machine</td>
+          <td>1936</td>
+          <td>Alan Turing</td>
+          <td>Theoretical model of computation (foundation of modern computing)</td>
+        </tr>
+        <tr>
+          <td>ABC (Atanasoff-Berry Computer)</td>
+          <td>1937-1942</td>
+          <td>John Vincent Atanasoff & Clifford Berry</td>
+          <td>First electronic digital computer (used binary, electronic switches)</td>
+        </tr>
+        <tr>
+          <td>ENIAC</td>
+          <td>1945</td>
+          <td>J. Presper Eckert & John Mauchly (1st Generation)</td>
+          <td>First electronic, general-purpose programmable computer</td>
+        </tr>
+        <tr>
+          <td>UNIVAC I</td>
+          <td>1951</td>
+          <td>Eckert & Mauchly</td>
+          <td>First commercial electronic computer</td>
+        </tr>
+        <tr>
+          <td>IBM System/360</td>
+          <td>1964</td>
+          <td>IBM</td>
+          <td>Mainframe with integrated circuits, family of compatible machines</td>
+        </tr>
+        <tr>
+          <td>Microprocessor Era</td>
+          <td>1971</td>
+          <td>Intel</td>
+          <td>Computers became personal devices (Intel 4004 microprocessor)</td>
+        </tr>
+        <tr>
+          <td>Modern Supercomputer</td>
+          <td>Present</td>
+          <td>Seymour Cray / various</td>
+          <td>High-speed computation, massively parallel processing</td>
+        </tr>
+      </table>
 
       <h3>Important Facts</h3>
       <ul>
-        <li>First program by Ada Lovelace</li>
-        <li>Computer Literacy Day: December 2nd</li>
-        <li>First Indian computer: Siddhartha</li>
+        <li>Father of Computer → Charles Babbage</li>
+        <li>First Programmer → Lady Ada Lovelace (Ada Augusta)</li>
+        <li>Computer Literacy Day → December 2nd</li>
+        <li>First computer in India → HEC-2M (1955, imported)</li>
+        <li>First indigenous digital computer → TIFRAC (1960)</li>
+        <li>India's First Computer: Siddharth (1986), built by ECL (Electronics Corporation of India)</li>
+        <li>First computer installed in India → Bangalore Main Post Office</li>
+        <li>India's first supercomputer → PARAM 8000 (1991)</li>
+        <li>Developer of PARAM → Dr. Vijay P. Bhatkar (C-DAC)</li>
+        <li>First electronic digital computer (world) → ABC (Atanasoff-Berry Computer)</li>
+        <li>First general-purpose electronic computer → ENIAC</li>
+        <li>First supercomputer of the world → CDC 6600 (1964)</li>
+        <li>ENIAC: Electronic Numerical Integrator and Computer</li>
       </ul>
     `
   },
@@ -51,27 +133,67 @@ export const notes = [
     id: "generations",
     title: "Computer Generations",
     content: `
-      <h3>First Generation (1942-1952)</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Generation</th>
+          <th>Key Technology</th>
+          <th>Language</th>
+          <th>Examples</th>
+        </tr>
+        <tr>
+          <td>1st (1940–1956)</td>
+          <td>Vacuum Tubes</td>
+          <td>Machine Language</td>
+          <td>ENIAC, EDVAC, UNIVAC</td>
+        </tr>
+        <tr>
+          <td>2nd (1957–1963)</td>
+          <td>Transistors</td>
+          <td>Symbolic / Assembly (COBOL, FORTRAN)</td>
+          <td>IBM 1401, ATLAS</td>
+        </tr>
+        <tr>
+          <td>3rd (1964–1971)</td>
+          <td>Integrated Circuits (ICs)</td>
+          <td>High-Level (C, C++)</td>
+          <td>IBM 360, CDC</td>
+        </tr>
+        <tr>
+          <td>4th (1971–Present)</td>
+          <td>Large Scale ICs (Microprocessors)</td>
+          <td>Modern Languages (Java, Python), Query → SQL</td>
+          <td>Personal Computers (PCs), Apple Mac</td>
+        </tr>
+        <tr>
+          <td>5th (Present)</td>
+          <td>AI & Optical Fibers</td>
+          <td>AI-based (Prolog)</td>
+          <td>Supercomputers, AI</td>
+        </tr>
+      </table>
+
+      <h3>Detailed Overview</h3>
+      <h4>First Generation (1942-1952)</h4>
       <ul>
         <li>Vacuum tubes • Large size • ENIAC</li>
       </ul>
 
-      <h3>Second Generation (1952-1964)</h3>
+      <h4>Second Generation (1952-1964)</h4>
       <ul>
         <li>Transistors • Smaller • IBM 700</li>
       </ul>
 
-      <h3>Third Generation (1964-1971)</h3>
+      <h4>Third Generation (1964-1971)</h4>
       <ul>
         <li>Integrated circuits • IBM 360</li>
       </ul>
 
-      <h3>Fourth Generation (1971-Present)</h3>
+      <h4>Fourth Generation (1971-Present)</h4>
       <ul>
         <li>Microprocessors • Personal Computers</li>
       </ul>
 
-      <h3>Fifth Generation (Present-Future)</h3>
+      <h4>Fifth Generation (Present-Future)</h4>
       <ul>
         <li>AI • Optical fibers</li>
       </ul>
@@ -100,22 +222,41 @@ export const notes = [
     content: `
       <h3>Basic Units</h3>
       <ol>
-        <li>CPU (Central Processing Unit)</li>
+        <li>CPU (Central Processing Unit) - "Brain of Computer"</li>
         <li>Memory Unit</li>
         <li>Input/Output Unit</li>
       </ol>
 
       <h3>CPU Components</h3>
-      <ol>
-        <li>Registers: Local memory (limited size)</li>
-        <li>ALU (Arithmetic Logic Unit): Performs calculations</li>
-        <li>Control Unit: Controls operations and instruction execution</li>
-      </ol>
+      <ul>
+        <li><strong>Functions:</strong> Executes instructions, processes data</li>
+        <li><strong>Main Components:</strong>
+          <ul>
+            <li><strong>ALU:</strong> Arithmetic (+ − × ÷) & Logical operations</li>
+            <li><strong>CU:</strong> Controls flow → Fetch → Decode → Execute cycle</li>
+            <li><strong>Registers</strong> (high-speed temporary storage):
+              <ul>
+                <li>Program Counter: Holds the address of the next instruction</li>
+                <li>Memory Address Register (MAR): Holds the address of the memory location to be read from or written to</li>
+                <li>Memory Buffer Register (MBR): Holds the data being transferred to/from memory</li>
+                <li>Instruction Register: Holds the current instruction being executed</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
       <h3>Data Flow Process</h3>
       <ol>
         <li>Input → Memory → CPU Processing → Memory → Output</li>
       </ol>
+
+      <h3>Buses: Communication pathways inside the computer</h3>
+      <ul>
+        <li>Data Bus: Carries data</li>
+        <li>Address Bus: Carries memory addresses</li>
+        <li>Control Bus: Carries control signals</li>
+      </ul>
     `
   },
   {
@@ -227,33 +368,37 @@ export const notes = [
     id: "memory",
     title: "Computer Memory",
     content: `
-      <h3>Types of Memory</h3>
+      <h3>Memory Unit Hierarchy (Speed ↑ Cost ↑ Capacity ↓)</h3>
       <ol>
-        <li>Cache Memory
+        <li><strong>Cache Memory</strong>
           <ul>
+            <li>Fastest, closest to CPU</li>
+            <li>Stores frequently used data/instructions</li>
+            <li>Small size, very costly</li>
             <li>High-speed semiconductor memory</li>
             <li>Buffer between CPU and main memory</li>
-            <li>Stores frequently used instructions</li>
-            <li>Very fast, expensive, temporary</li>
           </ul>
         </li>
-        <li>Primary/Main Memory
+        <li><strong>Primary/Main Memory</strong>
           <ul>
             <li>Volatile (data lost when power off)</li>
             <li>Faster than secondary memory</li>
             <li>Limited capacity</li>
             <li>Types:
               <ul>
-                <li>RAM (Random Access Memory)
+                <li><strong>RAM (Random Access Memory)</strong>
                   <ul>
                     <li>Read and write memory</li>
                     <li>CPU can change contents</li>
-                    <li>Types: Static RAM, Dynamic RAM</li>
+                    <li>Data lost on power off</li>
+                    <li>Types: SRAM (fast, costly), DRAM (cheaper, needs refresh)</li>
                   </ul>
                 </li>
-                <li>ROM (Read Only Memory)
+                <li><strong>ROM (Read Only Memory)</strong>
                   <ul>
                     <li>Permanent memory</li>
+                    <li>Non-volatile, Read only</li>
+                    <li>Permanent data (booting instructions)</li>
                     <li>Types: PROM, EPROM, EEPROM</li>
                   </ul>
                 </li>
@@ -261,30 +406,49 @@ export const notes = [
             </li>
           </ul>
         </li>
-        <li>Secondary Memory
+        <li><strong>Secondary Memory (Auxiliary/Storage)</strong>
           <ul>
-            <li>Non-volatile, external</li>
-            <li>Examples: Magnetic disks, CD, DVD, Pen drive</li>
+            <li>Non-volatile, large capacity, slower</li>
+            <li>Examples: HDD, SSD, Pen Drive, CD/DVD, Memory Card, Blu-ray</li>
             <li>Also called auxiliary memory</li>
           </ul>
         </li>
       </ol>
 
+      <div class="highlight">
+        <strong>Memory Speed Order:</strong> Registers > Cache > RAM > Secondary Memory<br>
+        <strong>Volatile Memory:</strong> RAM<br>
+        <strong>Non-Volatile Memory:</strong> ROM, HDD, SSD
+      </div>
+
       <h3>Memory Units</h3>
       <p>Basic Units</p>
       <ul>
-        <li>Bit: Smallest unit (0 or 1)</li>
+        <li>Bit (Binary Digit): Smallest unit (0 or 1)</li>
         <li>Nibble: 4 bits</li>
         <li>Byte: 8 bits</li>
         <li>Word: Group of bits forming a unit</li>
       </ul>
       <p>Larger Units</p>
       <ul>
-        <li>Kilobyte (KB): 1024 bytes</li>
-        <li>Megabyte (MB): 1024 KB</li>
-        <li>Gigabyte (GB): 1024 MB</li>
-        <li>Terabyte (TB): 1024 GB</li>
-        <li>Petabyte, Brontobyte, Geopbyte</li>
+        <li>1 Kilobyte (KB) = 1024 bytes</li>
+        <li>1 Megabyte (MB) = 1024 KB</li>
+        <li>1 Gigabyte (GB) = 1024 MB</li>
+        <li>1 Terabyte (TB) = 1024 GB</li>
+        <li>Larger units: Petabyte, Exabyte, Zettabyte, Yottabyte</li>
+      </ul>
+
+      <h3>I/O Techniques</h3>
+      <ul>
+        <li><strong>Programmed I/O:</strong> CPU waits for the I/O device to finish</li>
+        <li><strong>Interrupt-driven I/O:</strong> I/O device interrupts the CPU when ready</li>
+        <li><strong>Direct Memory Access (DMA):</strong> Data is transferred directly between memory and I/O devices without CPU intervention</li>
+      </ul>
+
+      <h3>Memory Management Concepts</h3>
+      <ul>
+        <li><strong>Virtual Memory:</strong> A memory management technique that uses hard disk space as RAM</li>
+        <li><strong>Deadlock:</strong> A situation where two or more processes are waiting for each other to release resources, causing a standstill</li>
       </ul>
     `
   },
@@ -358,6 +522,13 @@ export const notes = [
         <li>Fourth Generation: Query Languages (SQL)</li>
         <li>Fifth Generation: Artificial Intelligence Languages (Prolog, OPS5, Mercury)</li>
       </ol>
+
+      <h3>Translators</h3>
+      <ul>
+        <li><strong>Assembler:</strong> Converts Assembly Language to Machine Code</li>
+        <li><strong>Compiler:</strong> Converts the entire source code (HLL) to Machine Code at once</li>
+        <li><strong>Interpreter:</strong> Converts and executes code line-by-line</li>
+      </ul>
     `
   },
   {
@@ -375,32 +546,46 @@ export const notes = [
 
       <h3>Types of Software</h3>
       <ol>
-        <li>System Software
+        <li><strong>System Software</strong>
           <ul>
-            <li>Helps computer system operate</li>
-            <li>Provides basic functionality to operate computer by interacting directly with hardware</li>
-            <li>Examples: Operating System, Drivers, BIOS (Basic Input Output System)</li>
-          </ul>
-        </li>
-        <li>Application Software
-          <ul>
-            <li>Designed for performing one specific program/function</li>
+            <li>Provides the core functionality to operate the computer</li>
+            <li>Manages hardware and allows other software to run</li>
             <li>Examples:
               <ul>
-                <li>Word processing: MS Word</li>
-                <li>Presentations: PowerPoint</li>
-                <li>Spreadsheets: Excel</li>
-                <li>Web browsers: Google Chrome, Mozilla Firefox</li>
-                <li>Multimedia: Adobe Photoshop, VLC Media Player</li>
-                <li>Email: Microsoft Outlook</li>
+                <li>Operating Systems (OS): Windows, Linux, Android, macOS</li>
+                <li>Device Drivers: Enable communication with hardware (e.g., keyboard, printer)</li>
+                <li>Utility Software: For maintenance and configuration (e.g., Antivirus, Disk Cleaner)</li>
+                <li>Firmware: Permanent software embedded in hardware (e.g., BIOS – Basic Input Output System)</li>
               </ul>
             </li>
           </ul>
         </li>
-        <li>Programming Languages
+        <li><strong>Programming Software (Languages)</strong>
           <ul>
-            <li>Languages in which computer programs are written</li>
-            <li>Have specific grammar called "syntax"</li>
+            <li>Used by developers to create applications and websites</li>
+            <li>Types:
+              <ul>
+                <li>Low-Level Language: (e.g., Assembly Language)</li>
+                <li>High-Level Language: User-friendly, machine-independent (e.g., C, C++, Java, Python)</li>
+              </ul>
+            </li>
+            <li>Translators: Convert high-level code to machine code</li>
+          </ul>
+        </li>
+        <li><strong>Application Software</strong>
+          <ul>
+            <li>Designed for end-users to perform specific tasks</li>
+            <li>Examples:
+              <ul>
+                <li>Word Processors: MS Word, Google Docs, WordPad</li>
+                <li>Database Software: MS Access, MySQL</li>
+                <li>Web Browsers: Google Chrome, Mozilla Firefox, Safari</li>
+                <li>Multimedia Software: VLC Media Player, Photoshop</li>
+                <li>Presentation Software: MS PowerPoint</li>
+                <li>Spreadsheet Software: MS Excel</li>
+                <li>Email: Microsoft Outlook</li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ol>
@@ -484,6 +669,14 @@ export const notes = [
       <ul>
         <li>Resource manager that knows computer's resources and how to manage them properly</li>
         <li>Examples: Windows, Linux, Mac OS</li>
+      </ul>
+
+      <h4>Operating System Components</h4>
+      <ul>
+        <li><strong>Kernel:</strong> The core component of the OS that manages communication between hardware and software</li>
+        <li><strong>Shell:</strong> The user interface that takes commands and runs programs</li>
+        <li><strong>Process:</strong> A program in execution</li>
+        <li><strong>Thread:</strong> The smallest unit of execution within a process</li>
       </ul>
 
       <h4>Functions of Operating System</h4>
@@ -660,6 +853,7 @@ export const notes = [
         <li>USB (Universal Serial Bus)
           <ul>
             <li>Universal port for modern devices</li>
+            <li>Most common for keyboards, mice, pen drives</li>
             <li>Connects printer, scanner, mouse, keyboard</li>
           </ul>
         </li>
