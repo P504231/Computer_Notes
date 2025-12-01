@@ -83,7 +83,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       <aside className={`sidebar ${isOpen ? 'open' : ''} ${className}`}>
         <div className="sidebar-header">
           <div className="sidebar-title">
-            <i className="fas fa-book-open"></i>
+            <i className="a-duotone fa-solid fa-book-open fa-beat-fade"></i>
             <h3>Study Topics</h3>
           </div>
           <div className="sidebar-actions">
