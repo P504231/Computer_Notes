@@ -1532,7 +1532,7 @@ export const notes = [
   },
   {
     id: "networking-devices",
-    title: "Networking Devices – Super Crisp Revision Notes",
+    title: "Networking Devices",
     content: `
       <h3>Device Comparison Table</h3>
       <table class="comparison-table">
