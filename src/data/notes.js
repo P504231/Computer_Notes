@@ -963,73 +963,281 @@ export const notes = [
   },
   {
     id: "viruses",
-    title: "Computer Viruses & Malware",
+    title: "Viruses, Malware & Cybersecurity",
     content: `
-      <h3>What is a Computer Virus?</h3>
-      <p>A self-replicating malicious program that spreads by inserting copies of itself into other files or systems.</p>
-      <p><strong>VIRUS:</strong> Vital Information Resources Under Siege</p>
-      <p><strong>First Virus:</strong> Brain (1986)</p>
-
-      <h3>All Types of Viruses & Malware</h3>
+      <h3>1. Cybersecurity Basics</h3>
+      
+      <h4>CIA Triad (Core Principles):</h4>
       <table class="comparison-table">
         <tr>
-          <th>Type</th>
-          <th>Description</th>
-          <th>Examples</th>
+          <th>Principle</th>
+          <th>Meaning</th>
+          <th>Example</th>
         </tr>
         <tr>
-          <td>Boot Sector</td>
-          <td>Infects boot record</td>
-          <td>Brain, Stone</td>
+          <td><strong>Confidentiality</strong></td>
+          <td>Data is private, only authorized access</td>
+          <td>Encrypted messages</td>
         </tr>
         <tr>
-          <td>File Infector</td>
-          <td>Attaches to .exe files</td>
-          <td>Cascade, Jerusalem</td>
+          <td><strong>Integrity</strong></td>
+          <td>Data is accurate, untampered</td>
+          <td>Digital signatures</td>
         </tr>
         <tr>
-          <td>Macro Virus</td>
-          <td>Uses Word/Excel macros</td>
-          <td>Melissa</td>
-        </tr>
-        <tr>
-          <td>Polymorphic</td>
-          <td>Changes signature</td>
-          <td>Storm Worm</td>
-        </tr>
-        <tr>
-          <td>Metamorphic</td>
-          <td>Rewrites entire code</td>
-          <td>Zmist</td>
-        </tr>
-        <tr>
-          <td>Stealth</td>
-          <td>Hides from antivirus</td>
-          <td>Brain, Whale</td>
-        </tr>
-        <tr>
-          <td>Trojan</td>
-          <td>Pretends to be useful</td>
-          <td>Zeus, Beast</td>
-        </tr>
-        <tr>
-          <td>Worm</td>
-          <td>Spreads via network</td>
-          <td>ILOVEYOU, WannaCry</td>
-        </tr>
-        <tr>
-          <td>Ransomware</td>
-          <td>Encrypts files</td>
-          <td>WannaCry, Locky</td>
+          <td><strong>Availability</strong></td>
+          <td>Data accessible when needed</td>
+          <td>24/7 server uptime</td>
         </tr>
       </table>
 
+      <h4>Key Security Terms:</h4>
+      <ul>
+        <li><strong>Threat:</strong> Potential danger (hacker, virus)</li>
+        <li><strong>Vulnerability:</strong> System weakness (outdated software)</li>
+        <li><strong>Risk:</strong> Threat + Vulnerability = Potential loss</li>
+      </ul>
+
+      <h3>2. Computer Virus</h3>
+      <ul>
+        <li><strong>Definition:</strong> Self-replicating malicious program</li>
+        <li><strong>VIRUS:</strong> Vital Information Resources Under Siege</li>
+        <li><strong>First Virus:</strong> Brain (1986) - Pakistan</li>
+        <li><strong>Key Feature:</strong> CAN self-replicate</li>
+      </ul>
+
+      <h3>3. Malware Types Comparison</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Type</th>
+          <th>Self-Replicate?</th>
+          <th>Main Function</th>
+          <th>Examples</th>
+        </tr>
+        <tr>
+          <td><strong>Virus</strong></td>
+          <td>YES</td>
+          <td>Infects files, spreads when executed</td>
+          <td>Brain, Melissa, CIH</td>
+        </tr>
+        <tr>
+          <td><strong>Worm</strong></td>
+          <td>YES</td>
+          <td>Spreads via networks automatically</td>
+          <td>ILOVEYOU, WannaCry</td>
+        </tr>
+        <tr>
+          <td><strong>Trojan Horse</strong></td>
+          <td>NO</td>
+          <td>Disguises as legitimate software</td>
+          <td>Zeus, Back Orifice</td>
+        </tr>
+        <tr>
+          <td><strong>Ransomware</strong></td>
+          <td>Sometimes</td>
+          <td>Encrypts files, demands ransom</td>
+          <td>WannaCry, Locky</td>
+        </tr>
+        <tr>
+          <td><strong>Spyware</strong></td>
+          <td>NO</td>
+          <td>Monitors user activity secretly</td>
+          <td>Keyloggers, Adware</td>
+        </tr>
+        <tr>
+          <td><strong>Rootkit</strong></td>
+          <td>NO</td>
+          <td>Hides malware, hard to detect</td>
+          <td>Sony BMG, ZeroAccess</td>
+        </tr>
+        <tr>
+          <td><strong>Logic Bomb</strong></td>
+          <td>NO</td>
+          <td>Activates on specific conditions/time</td>
+          <td>Time bombs</td>
+        </tr>
+      </table>
+
+      <h4>Virus Sub-Types:</h4>
+      <ul>
+        <li><strong>Boot Sector:</strong> Infects boot record (Brain, Michelangelo)</li>
+        <li><strong>File Infector:</strong> Attaches to .exe files (Jerusalem, Cascade)</li>
+        <li><strong>Macro Virus:</strong> Uses Office macros (Melissa)</li>
+        <li><strong>Polymorphic:</strong> Changes signature (Storm Worm)</li>
+        <li><strong>Stealth:</strong> Hides from antivirus (Brain, Whale)</li>
+      </ul>
+
+      <h3>4. Hacker Classification</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Type</th>
+          <th>Intent</th>
+          <th>Legality</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td><strong>White Hat</strong></td>
+          <td>Good/Helpful</td>
+          <td>Legal (with permission)</td>
+          <td>Security testing, protection</td>
+        </tr>
+        <tr>
+          <td><strong>Black Hat</strong></td>
+          <td>Bad/Harmful</td>
+          <td>Illegal</td>
+          <td>Theft, damage, profit</td>
+        </tr>
+        <tr>
+          <td><strong>Grey Hat</strong></td>
+          <td>Mixed</td>
+          <td>Illegal but may report</td>
+          <td>Curiosity, recognition</td>
+        </tr>
+        <tr>
+          <td><strong>Script Kiddie</strong></td>
+          <td>Amateur</td>
+          <td>Illegal</td>
+          <td>Uses others' tools, attention</td>
+        </tr>
+      </table>
+
+      <h3>5. Common Cyber Attacks</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Attack</th>
+          <th>How it Works</th>
+          <th>Prevention</th>
+        </tr>
+        <tr>
+          <td><strong>Phishing</strong></td>
+          <td>Fake emails/websites for data theft</td>
+          <td>Verify sender, don't click links</td>
+        </tr>
+        <tr>
+          <td><strong>Packet Sniffing</strong></td>
+          <td>Intercepts network data</td>
+          <td>Use HTTPS, VPN, encryption</td>
+        </tr>
+        <tr>
+          <td><strong>Spoofing</strong></td>
+          <td>Impersonates legitimate source</td>
+          <td>Authentication, digital certificates</td>
+        </tr>
+        <tr>
+          <td><strong>DDoS</strong></td>
+          <td>Floods system with traffic</td>
+          <td>DDoS protection, traffic filtering</td>
+        </tr>
+        <tr>
+          <td><strong>Man-in-the-Middle</strong></td>
+          <td>Intercepts communication</td>
+          <td>Encryption, secure protocols</td>
+        </tr>
+      </table>
+
+      <h3>6. Security Measures</h3>
+      
+      <h4>Security Tools:</h4>
+      <ul>
+        <li><strong>Firewall:</strong> Blocks unauthorized network access</li>
+        <li><strong>Antivirus:</strong> Detects/removes malware</li>
+        <li><strong>VPN:</strong> Encrypts internet traffic</li>
+        <li><strong>IDS/IPS:</strong> Detects/prevents intrusions</li>
+      </ul>
+
+      <h4>Access Control:</h4>
+      <table class="comparison-table">
+        <tr>
+          <th>Term</th>
+          <th>Purpose</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td><strong>Authentication</strong></td>
+          <td>Verify "who you are"</td>
+          <td>Password, fingerprint, OTP</td>
+        </tr>
+        <tr>
+          <td><strong>Authorization</strong></td>
+          <td>Determine "what you can do"</td>
+          <td>Admin vs User permissions</td>
+        </tr>
+        <tr>
+          <td><strong>Accounting</strong></td>
+          <td>Record "what you did"</td>
+          <td>Log files, audit trails</td>
+        </tr>
+      </table>
+
+      <h3>7. Prevention & Best Practices</h3>
       <div class="highlight">
-        <strong>Prevention:</strong><br>
-        • Updated antivirus<br>
-        • Scan pendrives<br>
-        • Avoid unknown attachments<br>
-        • No pirated software
+        <strong>🛡️ Essential Security Measures:</strong><br>
+        1. Keep antivirus & software updated<br>
+        2. Use strong, unique passwords<br>
+        3. Regular data backups<br>
+        4. Don't click suspicious links/attachments<br>
+        5. Use legitimate software only<br>
+        6. Enable firewall<br>
+        7. Use encryption (HTTPS, VPN)<br>
+        8. Regular security awareness
+      </div>
+
+      <h3>8. Quick Exam Revision</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Question</th>
+          <th>Answer</th>
+        </tr>
+        <tr>
+          <td>First computer virus?</td>
+          <td>Brain (1986)</td>
+        </tr>
+        <tr>
+          <td>Virus full form?</td>
+          <td>Vital Information Resources Under Siege</td>
+        </tr>
+        <tr>
+          <td>Can Trojan self-replicate?</td>
+          <td>NO (key difference from virus/worm)</td>
+        </tr>
+        <tr>
+          <td>Legal hacking type?</td>
+          <td>White Hat/Ethical Hacker</td>
+        </tr>
+        <tr>
+          <td>Core security principles?</td>
+          <td>CIA Triad (Confidentiality, Integrity, Availability)</td>
+        </tr>
+        <tr>
+          <td>Verifies identity?</td>
+          <td>Authentication</td>
+        </tr>
+        <tr>
+          <td>Grants access rights?</td>
+          <td>Authorization</td>
+        </tr>
+        <tr>
+          <td>Fake emails attack?</td>
+          <td>Phishing</td>
+        </tr>
+        <tr>
+          <td>Blocks unauthorized access?</td>
+          <td>Firewall</td>
+        </tr>
+        <tr>
+          <td>Encrypts files for ransom?</td>
+          <td>Ransomware</td>
+        </tr>
+      </table>
+
+      <div class="key-point">
+        <strong>🎯 Critical Differences:</strong><br>
+        • Virus/Worm: CAN self-replicate<br>
+        • Trojan/Others: CANNOT self-replicate<br>
+        • White Hat: Legal security testing<br>
+        • Black Hat: Illegal malicious hacking<br>
+        • Authentication: Who you are<br>
+        • Authorization: What you can do
       </div>
     `
   },
@@ -1531,286 +1739,1104 @@ export const notes = [
     `
   },
   {
-    id: "networking-devices",
-    title: "Networking Devices",
+    id: "networking-full",
+    title: "Complete Networking Notes",
     content: `
-      <h3>Device Comparison Table</h3>
+      <h3>1. Data Communication Fundamentals</h3>
+      
+      <h4>What is Data Communication?</h4>
+      <p><strong>Definition:</strong> Exchange of data between two or more devices.</p>
+      
+      <h4>Four Key Characteristics of Data Communication:</h4>
       <table class="comparison-table">
         <tr>
-          <th>Device</th>
-          <th>OSI Layer</th>
-          <th>Main Function (2-3 Lines)</th>
-          <th>Key Points / Exam Tips</th>
+          <th>Characteristic</th>
+          <th>Description</th>
+          <th>Example</th>
         </tr>
         <tr>
-          <td><strong>Router</strong></td>
-          <td>Layer 3</td>
-          <td>Directs data between different networks using IP addresses<br>Connects LAN to Internet/WAN<br>Performs NAT & basic firewall</td>
-          <td>Most important device<br>Default Gateway of any network</td>
+          <td><strong>1. Delivery</strong></td>
+          <td>Data must reach correct destination at right time</td>
+          <td>Correct email recipient</td>
         </tr>
         <tr>
-          <td><strong>Switch</strong></td>
-          <td>Layer 2</td>
-          <td>Connects devices inside same LAN<br>Forwards data using MAC address<br>Sends data only to destination device</td>
-          <td>Reduces congestion<br>Replaced hubs</td>
+          <td><strong>2. Accuracy</strong></td>
+          <td>Data must be delivered accurately without errors</td>
+          <td>Exactly what was sent should be received</td>
         </tr>
         <tr>
-          <td><strong>Hub</strong></td>
-          <td>Layer 1</td>
-          <td>Connects devices in LAN<br>Broadcasts data to ALL ports<br>No intelligence</td>
-          <td>Obsolete → high collisions & slow</td>
+          <td><strong>3. Timeliness</strong></td>
+          <td>Data must be delivered in timely manner</td>
+          <td>Real-time communication needs timely delivery</td>
         </tr>
         <tr>
-          <td><strong>Modem</strong></td>
-          <td>Layer 1</td>
-          <td>Converts digital ↔ analog signals<br>Connects home network to ISP</td>
-          <td>Often combined with router (modem-router combo)</td>
+          <td><strong>4. Jitter</strong></td>
+          <td>Variation in packet arrival time (should be minimal)</td>
+          <td>Consistent streaming without interruptions</td>
+        </tr>
+      </table>
+
+      <h4>Data Communication Components:</h4>
+      <table class="comparison-table">
+        <tr>
+          <th>Component</th>
+          <th>Description</th>
+          <th>Example</th>
         </tr>
         <tr>
-          <td><strong>Access Point (AP)</strong></td>
-          <td>Layer 2</td>
-          <td>Extends Wi-Fi coverage<br>Connected to router via cable<br>Creates stronger wireless zone</td>
-          <td>Used in big homes/offices for better Wi-Fi range</td>
+          <td><strong>Sender</strong></td>
+          <td>Device that sends data</td>
+          <td>Computer, Phone, Server</td>
         </tr>
         <tr>
-          <td><strong>Firewall</strong></td>
-          <td>Layer 3-7</td>
-          <td>Security barrier<br>Filters incoming/outgoing traffic based on rules</td>
-          <td>Protects from threats<br>Hardware firewall sits at edge</td>
+          <td><strong>Transmission Medium</strong></td>
+          <td>Path through which data travels</td>
+          <td>Ethernet cable, Fiber optic, Wi-Fi</td>
         </tr>
         <tr>
-          <td><strong>NIC</strong></td>
-          <td>Layer 1-2</td>
-          <td>Network Interface Card (in every device)<br>Wired (Ethernet) or Wireless (Wi-Fi)</td>
-          <td>Has unique MAC address</td>
+          <td><strong>Receiver</strong></td>
+          <td>Device that receives data</td>
+          <td>Another computer, Printer</td>
         </tr>
         <tr>
-          <td><strong>Repeater</strong></td>
-          <td>Layer 1</td>
-          <td>Amplifies weak signals<br>Extends cable/Wi-Fi range</td>
-          <td>Just boosts signal, no new network</td>
+          <td><strong>Message & Protocols</strong></td>
+          <td>Data + Rules for communication</td>
+          <td>Data with TCP/IP rules</td>
+        </tr>
+      </table>
+
+      <h4>Signals in Data Communication:</h4>
+      <table class="comparison-table">
+        <tr>
+          <th>Signal Type</th>
+          <th>Description</th>
+          <th>Examples</th>
+          <th>Key Feature</th>
         </tr>
         <tr>
-          <td><strong>Bridge</strong></td>
-          <td>Layer 2</td>
-          <td>Connects two LAN segments<br>Filters traffic using MAC address</td>
-          <td>Makes them act as one network<br>Less common now</td>
+          <td><strong>Analog Data</strong></td>
+          <td>Continuous data, smooth variations</td>
+          <td>• Human voice<br>• Heartbeat<br>• Breathing rate<br>• Analog clock</td>
+          <td>Continuous wave form</td>
         </tr>
         <tr>
-          <td><strong>Gateway</strong></td>
-          <td>Layer 3+</td>
-          <td>Entry/exit point of entire network<br>Connects different types of networks/protocols</td>
-          <td>Same as router in most cases<br><strong>Most asked MCQ answer</strong></td>
+          <td><strong>Digital Data</strong></td>
+          <td>Discrete values, fixed measurements</td>
+          <td>• Digital clock<br>• Computer data<br>• Binary numbers (0s & 1s)</td>
+          <td>Discrete steps</td>
+        </tr>
+      </table>
+
+      <h3>2. Computer Network Basics</h3>
+      
+      <h4>What is a Computer Network?</h4>
+      <p><strong>Definition:</strong> Interconnected computers sharing resources and information.</p>
+      
+      <h4>Network Components:</h4>
+      <table class="comparison-table">
+        <tr>
+          <th>Component</th>
+          <th>Description</th>
+          <th>Also Called</th>
         </tr>
         <tr>
-          <td><strong>Load Balancer</strong></td>
-          <td>Layer 4-7</td>
-          <td>Distributes traffic across multiple servers<br>Prevents any server from overload</td>
-          <td>Used in big websites/data centers</td>
+          <td><strong>Nodes</strong></td>
+          <td>Connected devices in network</td>
+          <td>Computers, Printers, Servers</td>
+        </tr>
+        <tr>
+          <td><strong>Connection Media</strong></td>
+          <td>Medium for data transmission</td>
+          <td>Cables, Wireless signals</td>
+        </tr>
+      </table>
+
+      <h4>Connection Media Types:</h4>
+      <table class="comparison-table">
+        <tr>
+          <th>Media Type</th>
+          <th>Description</th>
+          <th>Examples</th>
+          <th>Advantages</th>
+          <th>Disadvantages</th>
+        </tr>
+        <tr>
+          <td><strong>Wired Media</strong></td>
+          <td>Physical cables connecting devices</td>
+          <td>• Ethernet cables<br>• Fiber optic cables<br>• Coaxial cables</td>
+          <td>• Faster<br>• More secure<br>• Reliable</td>
+          <td>• Limited mobility<br>• Installation required</td>
+        </tr>
+        <tr>
+          <td><strong>Wireless Media</strong></td>
+          <td>No physical cables, uses signals</td>
+          <td>• Wi-Fi<br>• Bluetooth<br>• Infrared</td>
+          <td>• Mobility<br>• Easy installation<br>• Flexible</td>
+          <td>• Slower<br>• Less secure<br>• Signal interference</td>
+        </tr>
+      </table>
+
+      <h3>3. Types of Networks (Based on Geographical Area)</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Network Type</th>
+          <th>Full Form</th>
+          <th>Coverage Area</th>
+          <th>Range</th>
+          <th>Speed</th>
+          <th>Examples</th>
+          <th>Key Features</th>
+        </tr>
+        <tr>
+          <td><strong>PAN</strong></td>
+          <td>Personal Area Network</td>
+          <td>Personal space around user</td>
+          <td>10 meters (30 feet)</td>
+          <td>Slow to Medium</td>
+          <td>• Bluetooth devices<br>• Smart watch + phone<br>• Wireless headphones<br>• Smart speaker</td>
+          <td>• Single user only<br>• Short range<br>• Personal devices<br>• Uses Bluetooth</td>
+        </tr>
+        <tr>
+          <td><strong>LAN</strong></td>
+          <td>Local Area Network</td>
+          <td>Building/Campus</td>
+          <td>Up to 1 km</td>
+          <td>Very High</td>
+          <td>• Office network<br>• School computer lab<br>• Home Wi-Fi<br>• Cyber cafe</td>
+          <td>• Uses Ethernet cables<br>• High speed<br>• Limited area<br>• Most common type<br>• Owned by organization</td>
+        </tr>
+        <tr>
+          <td><strong>CAN</strong></td>
+          <td>Campus Area Network</td>
+          <td>University/Corporate Campus</td>
+          <td>1-5 km</td>
+          <td>High</td>
+          <td>• University campus<br>• Corporate buildings<br>• Multiple LANs connected<br>• Hospital complex</td>
+          <td>• Connects multiple LANs<br>• Larger than LAN<br>• Smaller than MAN<br>• Owned by institution</td>
+        </tr>
+        <tr>
+          <td><strong>MAN</strong></td>
+          <td>Metropolitan Area Network</td>
+          <td>City/Town</td>
+          <td>5-50 km</td>
+          <td>Medium to High</td>
+          <td>• Cable TV network<br>• City-wide Wi-Fi<br>• Bank branches in city<br>• Government offices</td>
+          <td>• Covers entire city<br>• Larger than LAN<br>• Smaller than WAN<br>• May be owned by multiple organizations</td>
+        </tr>
+        <tr>
+          <td><strong>WAN</strong></td>
+          <td>Wide Area Network</td>
+          <td>Country/Continent/World</td>
+          <td>50+ km</td>
+          <td>Slow to Medium</td>
+          <td>• The Internet<br>• Bank ATMs nationwide<br>• Multi-national companies<br>• Global corporate networks</td>
+          <td>• Largest network type<br>• Uses satellites, cables<br>• Connects cities/countries<br>• May be public/private</td>
+        </tr>
+        <tr>
+          <td><strong>SAN</strong></td>
+          <td>Storage Area Network</td>
+          <td>Data Center</td>
+          <td>Building/Data Center</td>
+          <td>Very High</td>
+          <td>• Data storage networks<br>• Backup systems<br>• Cloud storage servers<br>• Enterprise storage</td>
+          <td>• Specialized for storage<br>• High-speed data transfer<br>• Block-level access<br>• Dedicated to storage</td>
+        </tr>
+        <tr>
+          <td><strong>VPN</strong></td>
+          <td>Virtual Private Network</td>
+          <td>Virtual/Overlay network</td>
+          <td>Global (over internet)</td>
+          <td>Depends on internet</td>
+          <td>• Secure office access<br>• Remote work networks<br>• Privacy protection<br>• Bypass restrictions</td>
+          <td>• Creates secure tunnel<br>• Hides user identity<br>• Temporary IP address<br>• Secure encryption</td>
         </tr>
       </table>
 
       <div class="key-point">
-        <strong>Golden Exam Rule:</strong><br>
-        Any data leaving or entering your local network <strong>MUST</strong> pass through the <strong>Gateway/Router</strong> → Answer is always <strong>Gateway</strong> when question says "entry and exit point".
+        <strong>📊 NETWORK SIZE COMPARISON (Smallest to Largest):</strong><br>
+        PAN → LAN → CAN → MAN → WAN<br>
+        (Personal → Local → Campus → City → Worldwide)
       </div>
 
-      <h3>Data Flow in Typical Home Network</h3>
-      <p><strong>Your Phone/Laptop (Wi-Fi)</strong> → <strong>Access Point</strong> (in router) → <strong>Switch</strong> (inside router) → <strong>Router/Gateway</strong> → NAT & Routing → <strong>Modem</strong> → ISP → Internet</p>
-      <p><strong>Incoming:</strong> Internet → Modem → Router/Gateway → Switch → Access Point → Your Device</p>
+      <h3>4. Connection Types</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Connection Type</th>
+          <th>Description</th>
+          <th>Devices Connected</th>
+          <th>Diagram</th>
+          <th>Example</th>
+          <th>Advantages</th>
+        </tr>
+        <tr>
+          <td><strong>Point-to-Point</strong></td>
+          <td>Direct dedicated link between two devices</td>
+          <td>Only 2 devices</td>
+          <td>A ↔ B</td>
+          <td>• Computer to printer<br>• Two routers connected<br>• Phone hotspot to laptop</td>
+          <td>• Simple<br>• Dedicated bandwidth<br>• Secure</td>
+        </tr>
+        <tr>
+          <td><strong>Multi-Point</strong></td>
+          <td>Multiple devices share single link</td>
+          <td>3 or more devices</td>
+          <td>A ← Hub → B, C, D</td>
+          <td>• Multiple computers to router<br>• Bus topology network<br>• Wi-Fi network</td>
+          <td>• Cost-effective<br>• Easy to expand<br>• Shared resources</td>
+        </tr>
+      </table>
+
+      <h3>5. Data Communication Modes (Transmission Modes)</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Mode</th>
+          <th>Direction</th>
+          <th>Communication Type</th>
+          <th>Examples</th>
+          <th>Key Features</th>
+          <th>Exam Tips</th>
+        </tr>
+        <tr>
+          <td><strong>Simplex</strong></td>
+          <td>One-way only</td>
+          <td>Only sender → receiver<br>No reply possible</td>
+          <td>• Keyboard to CPU<br>• TV broadcast<br>• Speaker output<br>• Radio station</td>
+          <td>• Unidirectional<br>• No feedback<br>• Fixed roles</td>
+          <td>• One direction only<br>• No return path</td>
+        </tr>
+        <tr>
+          <td><strong>Half-Duplex</strong></td>
+          <td>Two-way, but ONE at a time</td>
+          <td>Both can send/receive but NOT simultaneously<br>Turn-based communication</td>
+          <td>• Walkie-talkie<br>• Two-way radio<br>• Push-to-talk<br>• CB radio</td>
+          <td>• Bidirectional<br>• One direction at a time<br>• Requires waiting</td>
+          <td>• Two-way but alternate<br>• "Over" signal used</td>
+        </tr>
+        <tr>
+          <td><strong>Full-Duplex</strong></td>
+          <td>Two-way SIMULTANEOUSLY</td>
+          <td>Both can send/receive at SAME time</td>
+          <td>• Telephone<br>• Mobile phone<br>• Video call<br>• Online chat</td>
+          <td>• Bidirectional<br>• Simultaneous<br>• Most efficient</td>
+          <td>• Both directions at once<br>• Most modern systems</td>
+        </tr>
+      </table>
+
+      <h3>6. Network Topologies (Physical Layout)</h3>
+      
+      <h4>What is Network Topology?</h4>
+      <p><strong>Definition:</strong> Physical or logical arrangement of nodes (computers) in a network.</p>
+
+      <table class="comparison-table">
+        <tr>
+          <th>Topology</th>
+          <th>Diagram Shape</th>
+          <th>Cable Formula</th>
+          <th>Advantages</th>
+          <th>Disadvantages</th>
+          <th>Use Cases</th>
+          <th>Special Features</th>
+        </tr>
+        <tr>
+          <td><strong>Bus Topology</strong></td>
+          <td>Straight line (Linear)</td>
+          <td>Single backbone cable</td>
+          <td>• Cheapest<br>• Simple to install<br>• Easy to add devices</td>
+          <td>• Single cable failure = Entire network fails<br>• Slow speed<br>• Difficult to troubleshoot</td>
+          <td>• Small networks<br>• Temporary setups<br>• Early networks</td>
+          <td>• Uses TERMINATORS at ends<br>• Multi-point connection</td>
+        </tr>
+        <tr>
+          <td><strong>Ring Topology</strong></td>
+          <td>Circle/Ring</td>
+          <td>Number of nodes = Number of cables</td>
+          <td>• No data collisions<br>• Equal access for all<br>• Good for heavy traffic</td>
+          <td>• Single node failure = Network fails<br>• Difficult to add devices<br>• Slow performance</td>
+          <td>• Token Ring networks<br>• FDDI networks<br>• Some industrial systems</td>
+          <td>• Unidirectional flow<br>• All nodes must be ON<br>• Data passes through all nodes</td>
+        </tr>
+        <tr>
+          <td><strong>Star Topology</strong></td>
+          <td>Star (Central hub)</td>
+          <td>n cables for n devices</td>
+          <td>• Easy to troubleshoot<br>• Single failure doesn't affect others<br>• Fast performance</td>
+          <td>• Hub failure = Entire network fails<br>• Expensive (needs hub)<br>• More cables needed</td>
+          <td>• Most offices<br>• Home networks<br>• Modern LANs</td>
+          <td>• Most popular topology<br>• Uses hub/switch at center<br>• Easy to add/remove devices</td>
+        </tr>
+        <tr>
+          <td><strong>Mesh Topology</strong></td>
+          <td>Fully connected web</td>
+          <td>n(n-1)/2 cables</td>
+          <td>• Most reliable<br>• Fastest communication<br>• No single point of failure</td>
+          <td>• Most expensive<br>• Too many cables<br>• Difficult to manage</td>
+          <td>• Military networks<br>• Critical systems<br>• Banking networks</td>
+          <td>• Every node to every node<br>• Most redundant<br>• Formula important for exams</td>
+        </tr>
+        <tr>
+          <td><strong>Tree Topology</strong></td>
+          <td>Hierarchical tree</td>
+          <td>Varies (hybrid)</td>
+          <td>• Easy to expand<br>• Easy fault identification<br>• Good for large networks</td>
+          <td>• Backbone failure = Network fails<br>• Difficult to configure<br>• Expensive</td>
+          <td>• Large organizations<br>• University networks<br>• Corporate networks</td>
+          <td>• Hybrid (Bus + Star)<br>• Also called extended star<br>• Hierarchical structure</td>
+        </tr>
+        <tr>
+          <td><strong>Hybrid Topology</strong></td>
+          <td>Mixed shape</td>
+          <td>Varies by combination</td>
+          <td>• Flexible<br>• Scalable<br>• Reliable</td>
+          <td>• Complex design<br>• Expensive<br>• Difficult to manage</td>
+          <td>• Large complex networks<br>• Custom solutions<br>• Enterprise networks</td>
+          <td>• Combination of 2+ topologies<br>• No standard design<br>• Custom as per need</td>
+        </tr>
+      </table>
 
       <div class="highlight">
-        <strong>Most Frequent SSC/Railway/Banking Questions:</strong><br>
-        • Entry & exit point of a network? → <strong>Gateway</strong><br>
-        • Connects two different networks? → <strong>Router/Gateway</strong><br>
-        • Works only inside one LAN? → <strong>Switch</strong><br>
-        • Broadcasts everything? → <strong>Hub</strong><br>
-        • Your home Wi-Fi router = Router + Switch + Access Point (+ Modem)
+        <strong>🔢 MESH TOPOLOGY FORMULA:</strong><br>
+        For 'n' devices/nodes:<br>
+        Number of cables required = n(n-1)/2<br>
+        Example: 5 devices = 5(5-1)/2 = 5×4/2 = 10 cables
       </div>
+
+      <h3>7. Cloud Computing</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Aspect</th>
+          <th>Description</th>
+          <th>Examples</th>
+          <th>Benefits</th>
+        </tr>
+        <tr>
+          <td><strong>Definition</strong></td>
+          <td>Internet-based computing providing services (storage, servers) accessible from any device</td>
+          <td>• Google Drive<br>• Dropbox<br>• Microsoft OneDrive<br>• iCloud</td>
+          <td>• Access anywhere<br>• Automatic backup<br>• Collaboration</td>
+        </tr>
+        <tr>
+          <td><strong>How it Works</strong></td>
+          <td>Data stored on internet servers, accessible via any device with internet</td>
+          <td>• Photos backup<br>• Document storage<br>• File sharing</td>
+          <td>• No local storage needed<br>• Sync across devices<br>• Disaster recovery</td>
+        </tr>
+        <tr>
+          <td><strong>Key Feature</strong></td>
+          <td>If device changes, just login to cloud account - all data available</td>
+          <td>Change phone → Login to Google Drive → All data restored</td>
+          <td>• Device independence<br>• Data persistence<br>• Easy migration</td>
+        </tr>
+      </table>
+
+      <h3>8. Networking Devices (Complete List)</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Device</th>
+          <th>Full Form</th>
+          <th>OSI Layer</th>
+          <th>Main Function</th>
+          <th>Key Features</th>
+          <th>Exam Importance</th>
+        </tr>
+        <tr>
+          <td><strong>Modem</strong></td>
+          <td>Modulator-Demodulator</td>
+          <td>Layer 1</td>
+          <td>Converts digital ↔ analog signals</td>
+          <td>• Provides internet connection<br>• Uses telephone lines<br>• Often combined with router</td>
+          <td>HIGH</td>
+        </tr>
+        <tr>
+          <td><strong>NIC</strong></td>
+          <td>Network Interface Card</td>
+          <td>Layer 1-2</td>
+          <td>Hardware for network connection</td>
+          <td>• Has MAC Address<br>• Wired/Wireless<br>• Every device needs NIC</td>
+          <td>HIGH</td>
+        </tr>
+        <tr>
+          <td><strong>Repeater</strong></td>
+          <td>-</td>
+          <td>Layer 1</td>
+          <td>Amplifies weak signals</td>
+          <td>• Extends network range<br>• Regenerates signals<br>• No intelligence</td>
+          <td>MEDIUM</td>
+        </tr>
+        <tr>
+          <td><strong>Hub</strong></td>
+          <td>-</td>
+          <td>Layer 1</td>
+          <td>Connects multiple devices in LAN</td>
+          <td>• Broadcasts to all ports<br>• No intelligence<br>• Obsolete</td>
+          <td>HIGH</td>
+        </tr>
+        <tr>
+          <td><strong>Switch</strong></td>
+          <td>-</td>
+          <td>Layer 2</td>
+          <td>Intelligent hub for LAN</td>
+          <td>• Sends to specific device<br>• Reduces congestion<br>• Modern replacement for hub</td>
+          <td>VERY HIGH</td>
+        </tr>
+        <tr>
+          <td><strong>Router</strong></td>
+          <td>-</td>
+          <td>Layer 3</td>
+          <td>Connects different networks</td>
+          <td>• Uses IP addresses<br>• Default gateway<br>• Performs NAT</td>
+          <td>VERY HIGH</td>
+        </tr>
+        <tr>
+          <td><strong>Gateway</strong></td>
+          <td>-</td>
+          <td>Layer 3+</td>
+          <td>Entry/exit point of network</td>
+          <td>• Connects different protocols<br>• Network entry point<br>• Most asked in exams</td>
+          <td>VERY HIGH</td>
+        </tr>
+        <tr>
+          <td><strong>Bridge</strong></td>
+          <td>-</td>
+          <td>Layer 2</td>
+          <td>Connects similar networks</td>
+          <td>• Filters using MAC address<br>• Connects LAN segments<br>• Less common now</td>
+          <td>MEDIUM</td>
+        </tr>
+      </table>
+
+      <h3>9. Network Protocols</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Protocol</th>
+          <th>Full Form</th>
+          <th>Purpose</th>
+          <th>Port</th>
+          <th>Layer</th>
+          <th>Example Use</th>
+        </tr>
+        <tr>
+          <td><strong>TCP/IP</strong></td>
+          <td>Transmission Control Protocol/Internet Protocol</td>
+          <td>Core internet communication</td>
+          <td>Various</td>
+          <td>Transport/Network</td>
+          <td>Basic internet communication</td>
+        </tr>
+        <tr>
+          <td><strong>HTTP</strong></td>
+          <td>HyperText Transfer Protocol</td>
+          <td>Web page transfer</td>
+          <td>80</td>
+          <td>Application</td>
+          <td>Website browsing</td>
+        </tr>
+        <tr>
+          <td><strong>HTTPS</strong></td>
+          <td>HTTP Secure</td>
+          <td>Secure web transfer</td>
+          <td>443</td>
+          <td>Application</td>
+          <td>Secure websites (banking)</td>
+        </tr>
+        <tr>
+          <td><strong>FTP</strong></td>
+          <td>File Transfer Protocol</td>
+          <td>File upload/download</td>
+          <td>20/21</td>
+          <td>Application</td>
+          <td>File sharing</td>
+        </tr>
+        <tr>
+          <td><strong>SMTP</strong></td>
+          <td>Simple Mail Transfer Protocol</td>
+          <td>Sending email</td>
+          <td>25</td>
+          <td>Application</td>
+          <td>Email sending</td>
+        </tr>
+        <tr>
+          <td><strong>POP3</strong></td>
+          <td>Post Office Protocol v3</td>
+          <td>Receiving email</td>
+          <td>110</td>
+          <td>Application</td>
+          <td>Email download</td>
+        </tr>
+        <tr>
+          <td><strong>IMAP</strong></td>
+          <td>Internet Message Access Protocol</td>
+          <td>Email access (keeps on server)</td>
+          <td>143</td>
+          <td>Application</td>
+          <td>Email sync across devices</td>
+        </tr>
+      </table>
+
+      <h3>10. Addressing Systems</h3>
+      
+      <h4>MAC Address (Media Access Control Address)</h4>
+      <table class="comparison-table">
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td><strong>Type</strong></td>
+          <td>Physical/Hardware Address</td>
+          <td>Permanent address burned into NIC</td>
+        </tr>
+        <tr>
+          <td><strong>Format</strong></td>
+          <td>12-digit Hexadecimal</td>
+          <td>Example: 00:1A:2B:3C:4D:5E or 00-1A-2B-3C-4D-5E</td>
+        </tr>
+        <tr>
+          <td><strong>Length</strong></td>
+          <td>48 bits (6 bytes)</td>
+          <td>12 hex digits × 4 bits each = 48 bits</td>
+        </tr>
+        <tr>
+          <td><strong>Structure</strong></td>
+          <td>First 6 digits: Manufacturer ID<br>Last 6 digits: Serial number</td>
+          <td>OUI (Organizationally Unique Identifier) + Device ID</td>
+        </tr>
+        <tr>
+          <td><strong>Location</strong></td>
+          <td>On Network Interface Card (NIC)</td>
+          <td>Every NIC has unique MAC address</td>
+        </tr>
+        <tr>
+          <td><strong>Purpose</strong></td>
+          <td>Identifies physical device on local network</td>
+          <td>Used for local network communication</td>
+        </tr>
+      </table>
+
+      <h4>IP Address (Internet Protocol Address)</h4>
+      <table class="comparison-table">
+        <tr>
+          <th>Feature</th>
+          <th>IPv4</th>
+          <th>IPv6</th>
+        </tr>
+        <tr>
+          <td><strong>Type</strong></td>
+          <td>Logical/Virtual Address</td>
+          <td>Logical/Virtual Address</td>
+        </tr>
+        <tr>
+          <td><strong>Address Size</strong></td>
+          <td>32 bits</td>
+          <td>128 bits</td>
+        </tr>
+        <tr>
+          <td><strong>Format</strong></td>
+          <td>Decimal (4 octets)<br>Example: 192.168.1.1</td>
+          <td>Hexadecimal (8 groups)<br>Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</td>
+        </tr>
+        <tr>
+          <td><strong>Octet Range</strong></td>
+          <td>0 to 255 per octet</td>
+          <td>0 to FFFF per group</td>
+        </tr>
+        <tr>
+          <td><strong>Total Addresses</strong></td>
+          <td>2³² ≈ 4.3 billion</td>
+          <td>2¹²⁸ ≈ 3.4×10³⁸ (trillions)</td>
+        </tr>
+        <tr>
+          <td><strong>Example Validation</strong></td>
+          <td>192.168.1.1 ✓ (0-255 range)<br>192.168.300.1 ✗ (300 > 255)</td>
+          <td>Always check format not range</td>
+        </tr>
+        <tr>
+          <td><strong>Purpose</strong></td>
+          <td>Identifies device on internet/network</td>
+          <td>Newer version, more addresses</td>
+        </tr>
+      </table>
+
+      <div class="highlight">
+        <strong>🎯 CRITICAL EXAM DIFFERENCES:</strong><br>
+        <strong>MAC Address:</strong> Physical, on NIC, 12 hex digits, Layer 2, Permanent<br>
+        <strong>IP Address:</strong> Logical, assigned, decimal/hex, Layer 3, Temporary
+      </div>
+
+      <h3>11. Quick Revision & Exam Tips</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Question Type</th>
+          <th>Answer</th>
+          <th>Reason</th>
+        </tr>
+        <tr>
+          <td>Smallest network type?</td>
+          <td>PAN (Personal Area Network)</td>
+          <td>10m range, personal devices only</td>
+        </tr>
+        <tr>
+          <td>Largest network type?</td>
+          <td>WAN (Wide Area Network)</td>
+          <td>Covers countries/continents/world</td>
+        </tr>
+        <tr>
+          <td>Most common LAN topology?</td>
+          <td>Star Topology</td>
+          <td>Used in offices/homes, easy management</td>
+        </tr>
+        <tr>
+          <td>Most reliable topology?</td>
+          <td>Mesh Topology</td>
+          <td>No single point of failure</td>
+        </tr>
+        <tr>
+          <td>Cheapest topology?</td>
+          <td>Bus Topology</td>
+          <td>Single cable, simple installation</td>
+        </tr>
+        <tr>
+          <td>Entry/Exit point of network?</td>
+          <td>Gateway</td>
+          <td>Most asked MCQ, network boundary</td>
+        </tr>
+        <tr>
+          <td>Physical address is called?</td>
+          <td>MAC Address</td>
+          <td>On NIC, hardware address</td>
+        </tr>
+        <tr>
+          <td>Logical address is called?</td>
+          <td>IP Address</td>
+          <td>Assigned by network, virtual address</td>
+        </tr>
+        <tr>
+          <td>Converts digital to analog?</td>
+          <td>Modem</td>
+          <td>Modulator-Demodulator function</td>
+        </tr>
+        <tr>
+          <td>Amplifies weak signals?</td>
+          <td>Repeater</td>
+          <td>Extends network range</td>
+        </tr>
+        <tr>
+          <td>Broadcasts to all devices?</td>
+          <td>Hub</td>
+          <td>No intelligence, sends to all ports</td>
+        </tr>
+        <tr>
+          <td>Sends to specific device only?</td>
+          <td>Switch</td>
+          <td>Intelligent, checks destination</td>
+        </tr>
+        <tr>
+          <td>Connects different networks?</td>
+          <td>Router</td>
+          <td>Uses IP addresses, routes data</td>
+        </tr>
+        <tr>
+          <td>One-way communication?</td>
+          <td>Simplex</td>
+          <td>Keyboard, speaker, TV broadcast</td>
+        </tr>
+        <tr>
+          <td>Two-way alternate communication?</td>
+          <td>Half-Duplex</td>
+          <td>Walkie-talkie, push-to-talk</td>
+        </tr>
+        <tr>
+          <td>Two-way simultaneous communication?</td>
+          <td>Full-Duplex</td>
+          <td>Telephone, mobile, video call</td>
+        </tr>
+      </table>
+
+      <div class="key-point">
+        <strong>🚨 MUST REMEMBER FORMULAS:</strong><br>
+        1. Mesh Topology Cables = n(n-1)/2<br>
+        2. IPv4 valid range = 0 to 255 per octet<br>
+        3. MAC Address = 12 hex digits (48 bits)<br>
+        4. Network Size: PAN < LAN < CAN < MAN < WAN
+      </div>
+
+      <h3>12. Additional Technologies</h3>
+      
+      <table class="comparison-table">
+        <tr>
+          <th>Technology</th>
+          <th>Full Form</th>
+          <th>Purpose</th>
+          <th>Key Feature</th>
+        </tr>
+        <tr>
+          <td><strong>VoLTE</strong></td>
+          <td>Voice over Long Term Evolution</td>
+          <td>High-speed voice calls over 4G</td>
+          <td>Faster call setup, better quality</td>
+        </tr>
+        <tr>
+          <td><strong>VoIP</strong></td>
+          <td>Voice over Internet Protocol</td>
+          <td>Voice calls over internet</td>
+          <td>Cheaper than traditional calls</td>
+        </tr>
+        <tr>
+          <td><strong>IoT</strong></td>
+          <td>Internet of Things</td>
+          <td>Network of physical devices</td>
+          <td>Smart devices connected to internet</td>
+        </tr>
+      </table>
     `
   },
   {
-    id: "abbreviations",
-    title: "Important Abbreviations",
-    content: `
-      <h3>Software & Programming</h3>
-      <table class="comparison-table">
-        <tr>
-          <th>Abbr</th>
-          <th>Full Form</th>
-        </tr>
-        <tr>
-          <td>HTTP</td>
-          <td>Hyper Text Transfer Protocol</td>
-        </tr>
-        <tr>
-          <td>SQL</td>
-          <td>Structure Query Language (4th generation language)</td>
-        </tr>
-        <tr>
-          <td>FORTRAN</td>
-          <td>Formula Translation (2nd generation language)</td>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td>Hyper Text Markup Language</td>
-        </tr>
-        <tr>
-          <td>CAD</td>
-          <td>Computer Aided Design</td>
-        </tr>
-        <tr>
-          <td>CAM</td>
-          <td>Computer Aided Manufacturing</td>
-        </tr>
-      </table>
+  "id": "logic-gates",
+  "title": "Logic Gates & Boolean Algebra",
+  "content": `
+    <h3>1. What are Logic Gates?</h3>
+    <ul>
+      <li><strong>Definition:</strong> Basic building blocks of digital circuits</li>
+      <li><strong>Function:</strong> Perform logical operations on binary inputs (0/1)</li>
+      <li><strong>Inputs:</strong> Usually 2 inputs (A, B) and 1 output (Y)</li>
+      <li><strong>Process:</strong> Only digital signals (0 and 1)</li>
+    </ul>
 
-      <h3>Hardware & Memory</h3>
-      <table class="comparison-table">
-        <tr>
-          <th>Abbr</th>
-          <th>Full Form</th>
-        </tr>
-        <tr>
-          <td>ROM</td>
-          <td>Read Only Memory</td>
-        </tr>
-        <tr>
-          <td>RAM</td>
-          <td>Random Access Memory</td>
-        </tr>
-        <tr>
-          <td>BIOS</td>
-          <td>Basic Input Output System</td>
-        </tr>
-        <tr>
-          <td>MODEM</td>
-          <td>Modulation Demodulation</td>
-        </tr>
-        <tr>
-          <td>CPU</td>
-          <td>Central Processing Unit</td>
-        </tr>
-        <tr>
-          <td>LCD</td>
-          <td>Liquid Crystal Display</td>
-        </tr>
-        <tr>
-          <td>LED</td>
-          <td>Light Emitting Diode</td>
-        </tr>
-        <tr>
-          <td>CRT</td>
-          <td>Cathode Ray Tube</td>
-        </tr>
-        <tr>
-          <td>TFT</td>
-          <td>Thin Film Transistor</td>
-        </tr>
-        <tr>
-          <td>MIPS</td>
-          <td>Million Instructions Per Second</td>
-        </tr>
-        <tr>
-          <td>MOPS</td>
-          <td>Millions Operations Per Second</td>
-        </tr>
-      </table>
+    <h3>2. Basic Logic Gates</h3>
 
-      <h3>Storage & Devices</h3>
-      <table class="comparison-table">
-        <tr>
-          <th>Abbr</th>
-          <th>Full Form</th>
-        </tr>
-        <tr>
-          <td>CD</td>
-          <td>Compact Disk</td>
-        </tr>
-        <tr>
-          <td>OMR</td>
-          <td>Optical Mark Reader</td>
-        </tr>
-        <tr>
-          <td>MICR</td>
-          <td>Magnetic Ink Character Reader</td>
-        </tr>
-        <tr>
-          <td>UPS</td>
-          <td>Uninterruptible Power Supply</td>
-        </tr>
-        <tr>
-          <td>DTH</td>
-          <td>Desktop System</td>
-        </tr>
-      </table>
+    <h4>AND Gate</h4>
+    <div class="logic-gate-with-image">
+      <div class="gate-image-container">
+        <img src="https://cdn.makecode.com/blob/b50209e493382b9e765c12c795ef05c5498e903b/static/cp/learn/logic-lab/logic-gates/and-gate.png" alt="AND Gate" class="gate-image">
+        <div class="gate-symbol">∧</div>
+      </div>
+      <div class="gate-info">
+        <strong>Symbol:</strong> ∧ or &<br>
+        <strong>Expression:</strong> Y = A·B or Y = A ∧ B<br>
+        <strong>Operation:</strong> Output = 1 ONLY when BOTH inputs = 1<br>
+        <strong>Real-world analogy:</strong> Both keys needed to open safe<br>
+        <strong>Truth Table:</strong>
+        <table class="mini-table">
+          <tr><th>A</th><th>B</th><th>Y</th></tr>
+          <tr><td>0</td><td>0</td><td>0</td></tr>
+          <tr><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>1</td><td>0</td><td>0</td></tr>
+          <tr><td>1</td><td>1</td><td>1</td></tr>
+        </table>
+      </div>
+    </div>
 
-      <h3>Networking & Internet</h3>
-      <table class="comparison-table">
-        <tr>
-          <th>Abbr</th>
-          <th>Full Form</th>
-        </tr>
-        <tr>
-          <td>WWW</td>
-          <td>World Wide Web</td>
-        </tr>
-        <tr>
-          <td>CCTV</td>
-          <td>Closed Circuit Television</td>
-        </tr>
-        <tr>
-          <td>ISP</td>
-          <td>Internet Service Provider</td>
-        </tr>
-        <tr>
-          <td>GPS</td>
-          <td>Global Positioning System</td>
-        </tr>
-      </table>
+    <h4>OR Gate</h4>
+    <div class="logic-gate-with-image">
+      <div class="gate-image-container">
+        <img src="https://cdn.makecode.com/blob/e8c22cbac91ce65f2b1d85b1007a754daf6cab01/static/cp/learn/logic-lab/logic-gates/or-gate.png" alt="OR Gate" class="gate-image">
+        <div class="gate-symbol">∨</div>
+      </div>
+      <div class="gate-info">
+        <strong>Symbol:</strong> ∨ or +<br>
+        <strong>Expression:</strong> Y = A+B or Y = A ∨ B<br>
+        <strong>Operation:</strong> Output = 1 when AT LEAST ONE input = 1<br>
+        <strong>Real-world analogy:</strong> Any switch can turn on light<br>
+        <strong>Truth Table:</strong>
+        <table class="mini-table">
+          <tr><th>A</th><th>B</th><th>Y</th></tr>
+          <tr><td>0</td><td>0</td><td>0</td></tr>
+          <tr><td>0</td><td>1</td><td>1</td></tr>
+          <tr><td>1</td><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>1</td><td>1</td></tr>
+        </table>
+      </div>
+    </div>
 
-      <h3>File Formats</h3>
-      <table class="comparison-table">
-        <tr>
-          <th>Abbr</th>
-          <th>Full Form</th>
-        </tr>
-        <tr>
-          <td>JPEG</td>
-          <td>Joint Photographic Expert Group</td>
-        </tr>
-        <tr>
-          <td>GIF</td>
-          <td>Graphic Interchangeable Format</td>
-        </tr>
-        <tr>
-          <td>PNG</td>
-          <td>Portable Network Graphic</td>
-        </tr>
-        <tr>
-          <td>PDF</td>
-          <td>Portable Document Format</td>
-        </tr>
-      </table>
+    <h4>NOT Gate (Inverter)</h4>
+    <div class="logic-gate-with-image">
+      <div class="gate-image-container">
+        <img src="https://cdn.makecode.com/blob/7de0e3d95bd8d12dc009a8ac52ce40c4d2ca80ae/static/cp/learn/logic-lab/logic-gates/not-gate.png" alt="NOT Gate" class="gate-image">
+        <div class="gate-symbol">¬</div>
+      </div>
+      <div class="gate-info">
+        <strong>Symbol:</strong> ¬ or ' or ‾<br>
+        <strong>Expression:</strong> Y = A' or Y = ¬A or Y = Ā<br>
+        <strong>Operation:</strong> Output = OPPOSITE of input (0→1, 1→0)<br>
+        <strong>Real-world analogy:</strong> Reverse gear in car<br>
+        <strong>Truth Table:</strong>
+        <table class="mini-table">
+          <tr><th>A</th><th>Y</th></tr>
+          <tr><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>0</td></tr>
+        </table>
+      </div>
+    </div>
 
-      <h3>Companies & Systems</h3>
-      <table class="comparison-table">
-        <tr>
-          <th>Abbr</th>
-          <th>Full Form</th>
-        </tr>
-        <tr>
-          <td>IBM</td>
-          <td>International Business Machine</td>
-        </tr>
-        <tr>
-          <td>ENIAC</td>
-          <td>Electronic Numerical Integrator and Calculator</td>
-        </tr>
-      </table>
-      <p>These notes cover software fundamentals, programming languages, operating systems, and important abbreviations for comprehensive computer knowledge.</p>
-    `
-  },
+    <h3>3. Universal Gates (Can create any gate)</h3>
+
+    <h4>NAND Gate (NOT + AND)</h4>
+    <div class="logic-gate-with-image">
+      <div class="gate-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Nand-gate-en.svg/1000px-Nand-gate-en.svg.png?20060601183730" alt="NAND Gate" class="gate-image">
+        <div class="gate-symbol">⊼</div>
+      </div>
+      <div class="gate-info">
+        <strong>Symbol:</strong> ⊼<br>
+        <strong>Expression:</strong> Y = (A·B)' or Y = ¬(A ∧ B)<br>
+        <strong>Operation:</strong> Output = 0 ONLY when BOTH inputs = 1<br>
+        <strong>Special:</strong> ✅ UNIVERSAL GATE<br>
+        <strong>Real-world analogy:</strong> Guard who opens door unless both keys used<br>
+        <strong>Truth Table:</strong>
+        <table class="mini-table">
+          <tr><th>A</th><th>B</th><th>Y</th></tr>
+          <tr><td>0</td><td>0</td><td>1</td></tr>
+          <tr><td>0</td><td>1</td><td>1</td></tr>
+          <tr><td>1</td><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>1</td><td>0</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h4>NOR Gate (NOT + OR)</h4>
+    <div class="logic-gate-with-image">
+      <div class="gate-image-container">
+        <img src="https://images.wondershare.com/edrawmax/articles2025/logic-gate-symbols/nor-gate-symbol.png" alt="NOR Gate" class="gate-image">
+        <div class="gate-symbol">⊽</div>
+      </div>
+      <div class="gate-info">
+        <strong>Symbol:</strong> ⊽<br>
+        <strong>Expression:</strong> Y = (A+B)' or Y = ¬(A ∨ B)<br>
+        <strong>Operation:</strong> Output = 1 ONLY when BOTH inputs = 0<br>
+        <strong>Special:</strong> ✅ UNIVERSAL GATE<br>
+        <strong>Real-world analogy:</strong> System that only works when all switches are OFF<br>
+        <strong>Truth Table:</strong>
+        <table class="mini-table">
+          <tr><th>A</th><th>B</th><th>Y</th></tr>
+          <tr><td>0</td><td>0</td><td>1</td></tr>
+          <tr><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>1</td><td>0</td><td>0</td></tr>
+          <tr><td>1</td><td>1</td><td>0</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h3>4. Special Gates</h3>
+
+    <h4>XOR Gate (Exclusive OR)</h4>
+    <div class="logic-gate-with-image">
+      <div class="gate-image-container">
+        <img src="https://cdn.makecode.com/blob/4266ce2da2a93cdeb4035e80fccea16ad651ca27/static/cp/learn/logic-lab/logic-gates/xor-gate.png" alt="XOR Gate" class="gate-image">
+        <div class="gate-symbol">⊕</div>
+      </div>
+      <div class="gate-info">
+        <strong>Symbol:</strong> ⊕<br>
+        <strong>Expression:</strong> Y = A ⊕ B<br>
+        <strong>Operation:</strong> Output = 1 when inputs are DIFFERENT<br>
+        <strong>Difference from OR:</strong> XOR gives 0 when both inputs = 1<br>
+        <strong>Real-world analogy:</strong> Two-way toggle switch<br>
+        <strong>Truth Table:</strong>
+        <table class="mini-table">
+          <tr><th>A</th><th>B</th><th>Y</th></tr>
+          <tr><td>0</td><td>0</td><td>0</td></tr>
+          <tr><td>0</td><td>1</td><td>1</td></tr>
+          <tr><td>1</td><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>1</td><td>0</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h4>XNOR Gate (Exclusive NOR)</h4>
+    <div class="logic-gate-with-image">
+      <div class="gate-image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Xnor-gate-en.svg/2560px-Xnor-gate-en.svg.png" alt="XNOR Gate" class="gate-image">
+        <div class="gate-symbol">⊙</div>
+      </div>
+      <div class="gate-info">
+        <strong>Symbol:</strong> ⊙<br>
+        <strong>Expression:</strong> Y = (A ⊕ B)' or Y = A ⊙ B<br>
+        <strong>Operation:</strong> Output = 1 when inputs are SAME<br>
+        <strong>Note:</strong> Opposite of XOR gate<br>
+        <strong>Real-world analogy:</strong> Matching lock - only opens when both keys match<br>
+        <strong>Truth Table:</strong>
+        <table class="mini-table">
+          <tr><th>A</th><th>B</th><th>Y</th></tr>
+          <tr><td>0</td><td>0</td><td>1</td></tr>
+          <tr><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>1</td><td>0</td><td>0</td></tr>
+          <tr><td>1</td><td>1</td><td>1</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h3>5. Logic Gates Comparison Table</h3>
+    <table class="comparison-table">
+      <tr>
+        <th>Gate</th>
+        <th>Symbol</th>
+        <th>Image</th>
+        <th>Expression</th>
+        <th>Output = 1 when</th>
+        <th>Universal?</th>
+      </tr>
+      <tr>
+        <td><strong>AND</strong></td>
+        <td>∧</td>
+        <td><img src="https://cdn.makecode.com/blob/b50209e493382b9e765c12c795ef05c5498e903b/static/cp/learn/logic-lab/logic-gates/and-gate.png" class="table-gate-image" alt="AND"></td>
+        <td>Y = A·B</td>
+        <td>BOTH = 1</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td><strong>OR</strong></td>
+        <td>∨</td>
+        <td><img src="https://cdn.makecode.com/blob/e8c22cbac91ce65f2b1d85b1007a754daf6cab01/static/cp/learn/logic-lab/logic-gates/or-gate.png" class="table-gate-image" alt="OR"></td>
+        <td>Y = A+B</td>
+        <td>AT LEAST ONE = 1</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td><strong>NOT</strong></td>
+        <td>¬</td>
+        <td><img src="https://cdn.makecode.com/blob/7de0e3d95bd8d12dc009a8ac52ce40c4d2ca80ae/static/cp/learn/logic-lab/logic-gates/not-gate.png" class="table-gate-image" alt="NOT"></td>
+        <td>Y = A'</td>
+        <td>Input = 0</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td><strong>NAND</strong></td>
+        <td>⊼</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Nand-gate-en.svg/1000px-Nand-gate-en.svg.png?20060601183730" class="table-gate-image" alt="NAND"></td>
+        <td>Y = (A·B)'</td>
+        <td>NOT(BOTH = 1)</td>
+        <td>✅ YES</td>
+      </tr>
+      <tr>
+        <td><strong>NOR</strong></td>
+        <td>⊽</td>
+        <td><img src="https://images.wondershare.com/edrawmax/articles2025/logic-gate-symbols/nor-gate-symbol.png" class="table-gate-image" alt="NOR"></td>
+        <td>Y = (A+B)'</td>
+        <td>BOTH = 0</td>
+        <td>✅ YES</td>
+      </tr>
+      <tr>
+        <td><strong>XOR</strong></td>
+        <td>⊕</td>
+        <td><img src="https://cdn.makecode.com/blob/4266ce2da2a93cdeb4035e80fccea16ad651ca27/static/cp/learn/logic-lab/logic-gates/xor-gate.png" class="table-gate-image" alt="XOR"></td>
+        <td>Y = A ⊕ B</td>
+        <td>DIFFERENT inputs</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td><strong>XNOR</strong></td>
+        <td>⊙</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Xnor-gate-en.svg/2560px-Xnor-gate-en.svg.png" class="table-gate-image" alt="XNOR"></td>
+        <td>Y = (A ⊕ B)'</td>
+        <td>SAME inputs</td>
+        <td>No</td>
+      </tr>
+    </table>
+
+    <h3>6. Boolean Algebra Laws</h3>
+    <table class="comparison-table">
+      <tr>
+        <th>Law</th>
+        <th>AND Form</th>
+        <th>OR Form</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td><strong>Identity</strong></td>
+        <td>A·1 = A</td>
+        <td>A+0 = A</td>
+        <td>A AND 1 = A</td>
+      </tr>
+      <tr>
+        <td><strong>Null</strong></td>
+        <td>A·0 = 0</td>
+        <td>A+1 = 1</td>
+        <td>A AND 0 = 0</td>
+      </tr>
+      <tr>
+        <td><strong>Idempotent</strong></td>
+        <td>A·A = A</td>
+        <td>A+A = A</td>
+        <td>A AND A = A</td>
+      </tr>
+      <tr>
+        <td><strong>Inverse</strong></td>
+        <td>A·A' = 0</td>
+        <td>A+A' = 1</td>
+        <td>A AND NOT A = 0</td>
+      </tr>
+      <tr>
+        <td><strong>Commutative</strong></td>
+        <td>A·B = B·A</td>
+        <td>A+B = B+A</td>
+        <td>A ∧ B = B ∧ A</td>
+      </tr>
+      <tr>
+        <td><strong>De Morgan's</strong></td>
+        <td>(A·B)' = A' + B'</td>
+        <td>(A+B)' = A'·B'</td>
+        <td>¬(A ∧ B) = ¬A ∨ ¬B</td>
+      </tr>
+    </table>
+
+    <div class="highlight">
+      <strong>🎯 CRITICAL EXAM POINTS:</strong><br>
+      1. <strong>Universal Gates:</strong> NAND (⊼) and NOR (⊽) only<br>
+      2. <strong>Truth Tables:</strong> MUST memorize all gates<br>
+      3. <strong>Gate Symbols:</strong> Recognize images for each gate<br>
+      4. <strong>De Morgan's Law:</strong> Most important theorem<br>
+      5. <strong>Applications:</strong> Adders, multiplexers, CPUs<br>
+      6. <strong>Remember:</strong> All gates work with binary (0/1) only
+    </div>
+
+    <h3>7. Memory Tricks & Applications</h3>
+    <div class="memory-tricks">
+      <div class="trick-card">
+        <div class="trick-icon">🔑</div>
+        <div class="trick-content">
+          <strong>AND Gate:</strong> Both keys needed<br>
+          <em>0×0=0, 0×1=0, 1×0=0, 1×1=1</em>
+        </div>
+      </div>
+      <div class="trick-card">
+        <div class="trick-icon">🚨</div>
+        <div class="trick-content">
+          <strong>OR Gate:</strong> Any alarm triggers<br>
+          <em>0+0=0, 0+1=1, 1+0=1, 1+1=1</em>
+        </div>
+      </div>
+      <div class="trick-card">
+        <div class="trick-icon">🔄</div>
+        <div class="trick-content">
+          <strong>NOT Gate:</strong> Always opposite<br>
+          <em>0→1, 1→0</em>
+        </div>
+      </div>
+      <div class="trick-card">
+        <div class="trick-icon">🏗️</div>
+        <div class="trick-content">
+          <strong>Universal Gates:</strong> Build any circuit<br>
+          <em>NAND & NOR can create all gates</em>
+        </div>
+      </div>
+    </div>
+
+    <h3>8. Gate Combinations</h3>
+    <div class="gate-combinations">
+      <div class="combination">
+        <span class="desc">AND + NOT = NAND</span>
+         <span class="desc">OR + NOT = NOR</span>
+        <span class="desc">XOR + NOT = XNOR</span>
+      </div>
+    </div>
+  `
+},
   {
     id: "ms-word",
     title: "Microsoft Word",
@@ -2071,5 +3097,210 @@ export const notes = [
         <li>Ctrl + D → Duplicate slide</li>
       </ul>
     `
-  }
+  },
+  {
+    id: "abbreviations",
+    title: "Important Abbreviations",
+    content: `
+      <h3>Software & Programming</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Abbr</th>
+          <th>Full Form</th>
+        </tr>
+        <tr>
+          <td>HTTP</td>
+          <td>Hyper Text Transfer Protocol</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>Structure Query Language (4th generation language)</td>
+        </tr>
+        <tr>
+          <td>FORTRAN</td>
+          <td>Formula Translation (2nd generation language)</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Hyper Text Markup Language</td>
+        </tr>
+        <tr>
+          <td>CAD</td>
+          <td>Computer Aided Design</td>
+        </tr>
+        <tr>
+          <td>CAM</td>
+          <td>Computer Aided Manufacturing</td>
+        </tr>
+      </table>
+
+      <h3>Hardware & Memory</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Abbr</th>
+          <th>Full Form</th>
+        </tr>
+        <tr>
+          <td>ROM</td>
+          <td>Read Only Memory</td>
+        </tr>
+        <tr>
+          <td>RAM</td>
+          <td>Random Access Memory</td>
+        </tr>
+        <tr>
+          <td>BIOS</td>
+          <td>Basic Input Output System</td>
+        </tr>
+        <tr>
+          <td>MODEM</td>
+          <td>Modulation Demodulation</td>
+        </tr>
+        <tr>
+          <td>CPU</td>
+          <td>Central Processing Unit</td>
+        </tr>
+        <tr>
+          <td>LCD</td>
+          <td>Liquid Crystal Display</td>
+        </tr>
+        <tr>
+          <td>LED</td>
+          <td>Light Emitting Diode</td>
+        </tr>
+        <tr>
+          <td>CRT</td>
+          <td>Cathode Ray Tube</td>
+        </tr>
+        <tr>
+          <td>TFT</td>
+          <td>Thin Film Transistor</td>
+        </tr>
+        <tr>
+          <td>MIPS</td>
+          <td>Million Instructions Per Second</td>
+        </tr>
+        <tr>
+          <td>MOPS</td>
+          <td>Millions Operations Per Second</td>
+        </tr>
+      </table>
+
+      <h3>Storage & Devices</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Abbr</th>
+          <th>Full Form</th>
+        </tr>
+        <tr>
+          <td>CD</td>
+          <td>Compact Disk</td>
+        </tr>
+        <tr>
+          <td>OMR</td>
+          <td>Optical Mark Reader</td>
+        </tr>
+        <tr>
+          <td>MICR</td>
+          <td>Magnetic Ink Character Reader</td>
+        </tr>
+        <tr>
+          <td>UPS</td>
+          <td>Uninterruptible Power Supply</td>
+        </tr>
+        <tr>
+          <td>DTH</td>
+          <td>Direct To Home</td>
+        </tr>
+      </table>
+
+      <h3>Networking & Internet</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Abbr</th>
+          <th>Full Form</th>
+        </tr>
+        <tr>
+          <td>WWW</td>
+          <td>World Wide Web</td>
+        </tr>
+        <tr>
+          <td>CCTV</td>
+          <td>Closed Circuit Television</td>
+        </tr>
+        <tr>
+          <td>ISP</td>
+          <td>Internet Service Provider</td>
+        </tr>
+        <tr>
+          <td>GPS</td>
+          <td>Global Positioning System</td>
+        </tr>
+      </table>
+
+      <h3>File Formats</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Abbr</th>
+          <th>Full Form</th>
+        </tr>
+        <tr>
+          <td>JPEG</td>
+          <td>Joint Photographic Expert Group</td>
+        </tr>
+        <tr>
+          <td>GIF</td>
+          <td>Graphic Interchangeable Format</td>
+        </tr>
+        <tr>
+          <td>PNG</td>
+          <td>Portable Network Graphic</td>
+        </tr>
+        <tr>
+          <td>PDF</td>
+          <td>Portable Document Format</td>
+        </tr>
+      </table>
+
+      <h3>Companies & Systems</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Abbr</th>
+          <th>Full Form</th>
+        </tr>
+        <tr>
+          <td>IBM</td>
+          <td>International Business Machine</td>
+        </tr>
+        <tr>
+          <td>ENIAC</td>
+          <td>Electronic Numerical Integrator and Calculator</td>
+        </tr>
+      </table>
+
+      <h3>Computer Codes (NEW from Video)</h3>
+      <table class="comparison-table">
+        <tr>
+          <th>Abbr</th>
+          <th>Full Form</th>
+          <th>Key Feature</th>
+        </tr>
+        <tr>
+          <td>BCD</td>
+          <td>Binary Coded Decimal</td>
+          <td>4 bits per decimal digit (IBM)</td>
+        </tr>
+        <tr>
+          <td>ASCII</td>
+          <td>American Standard Code for Information Interchange</td>
+          <td>7-bit (128 chars) or 8-bit (256 chars)</td>
+        </tr>
+        <tr>
+          <td>EBCDIC</td>
+          <td>Extended Binary Coded Decimal Interchange Code</td>
+          <td>8-bit code (256 characters)</td>
+        </tr>
+      </table>
+      `
+  },
 ];
