@@ -1228,6 +1228,112 @@ const { title, description = "Master Computer Awareness for SSC, Banking, Railwa
                 font-size: 0.9rem;
             }
         }
+        /* Simple Modern Alert Banner */
+.mobile-alert-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 450px;
+    background: white;
+    color: #333;
+    border-radius: 12px;
+    padding: 28px;
+    z-index: 10000;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeInScale 0.5s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.alert-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.alert-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: #fef3c7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d97706;
+}
+
+.alert-text h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.alert-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #6b7280;
+}
+
+.alert-close {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    color: #9ca3af;
+    transition: color 0.2s;
+}
+
+.alert-close:hover {
+    color: #374151;
+}
+
+.mobile-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .mobile-alert-banner {
+        background: #1f2937;
+        color: #f9fafb;
+        border-color: #374151;
+    }
+    
+    .alert-text h3 {
+        color: #f9fafb;
+    }
+    
+    .alert-text p {
+        color: #d1d5db;
+    }
+    
+    .alert-icon {
+        background: #374151;
+        color: #fbbf24;
+    }
+}
         /* Just for accordion content spacing */
 .section .content-wrapper {
     padding: 2rem 3rem;

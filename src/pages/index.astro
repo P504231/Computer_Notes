@@ -68,7 +68,7 @@ import { notes } from '../data/notes.js';
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
-                    <p>&copy; 2024 Computer Awareness. Made with <i class="fas fa-heart"></i> for students.</p>
+                    <p>&copy; 2025 Computer Awareness. Made with <i class="fas fa-heart"></i> for students.</p>
                     <div class="footer-links">
                         <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
                         <a href="/terms-of-service" class="footer-link">Terms of Service</a>
@@ -171,4 +171,102 @@ import { notes } from '../data/notes.js';
             });
         });
     </script>
+<script>
+    (function() {
+        // Function to check if device is mobile
+        function isMobileDevice() {
+            return (
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                (window.innerWidth <= 768)
+            );
+        }
+        
+        // Create and show banner
+        function showMobileBanner() {
+            // Check if alert was already shown in this session
+            // if (sessionStorage.getItem('mobileAlertShown') === 'true') {
+            //     return;
+            // }
+            
+            // Check if banner already exists
+            if (document.getElementById('mobile-alert-banner')) {
+                return;
+            }
+            
+            // Create banner element
+            const banner = document.createElement('div');
+            banner.id = 'mobile-alert-banner';
+            banner.className = 'mobile-alert-banner';
+            
+            // Banner content
+            banner.innerHTML = `
+                <div class="alert-content">
+                    <div class="alert-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.694-.833-2.464 0L4.33 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                    </div>
+                    <div class="alert-text">
+                        <h3>For Best Experience</h3>
+                        <p>This website works better in Desktop mode. Please switch to desktop mode in your browser settings.</p>
+                    </div>
+                    <button class="alert-close" id="close-alert">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            `;
+            
+            // Add banner to page
+            document.body.appendChild(banner);
+            
+            // Add overlay
+            const overlay = document.createElement('div');
+            overlay.id = 'mobile-alert-overlay';
+            overlay.className = 'mobile-alert-overlay';
+            document.body.appendChild(overlay);
+            
+            // Add event listener for close button with optional chaining
+            document.getElementById('close-alert')?.addEventListener('click', function() {
+                closeBanner();
+            });
+            
+            // Add event listener for overlay click
+            overlay.addEventListener('click', function() {
+                closeBanner();
+            });
+            
+            // Mark as shown
+            sessionStorage.setItem('mobileAlertShown', 'true');
+            
+            // Auto-close after 15 seconds
+            setTimeout(() => {
+                closeBanner();
+            }, 15000);
+        }
+        
+        function closeBanner() {
+            const banner = document.getElementById('mobile-alert-banner');
+            const overlay = document.getElementById('mobile-alert-overlay');
+            
+            banner?.classList.add('hiding');
+            overlay?.classList.add('hiding');
+            
+            setTimeout(() => {
+                banner?.parentNode?.removeChild(banner);
+                overlay?.parentNode?.removeChild(overlay);
+            }, 300);
+        }
+        
+        // Check if it's a mobile device
+        if (isMobileDevice()) {
+            // Wait for the ENTIRE page to load
+            window.addEventListener('load', function() {
+                // Add a small delay to ensure everything is fully rendered
+                setTimeout(showMobileBanner, 500);
+            });
+        }
+    })();
+</script>
 </Layout>
