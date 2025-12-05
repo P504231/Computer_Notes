@@ -2837,267 +2837,970 @@ export const notes = [
     </div>
   `
 },
-  {
-    id: "ms-word",
-    title: "Microsoft Word",
-    content: `
-      <ul>
-        <li><strong>Developed by:</strong> Microsoft Corporation</li>
-        <li><strong>Type:</strong> Word Processing Software</li>
-        <li><strong>Purpose:</strong> Create, edit, format & print documents</li>
-        <li><strong>First version launched:</strong> 1983</li>
-        <li><strong>Default Font:</strong> Calibri | <strong>Size:</strong> 11 pt</li>
-        <li><strong>File Extensions:</strong> .docx (normal), .doc (old), .dotx (template), .docm (macro-enabled)</li>
-        <li><strong>Maximum Zoom:</strong> 500% | <strong>Minimum Zoom:</strong> 10%</li>
-        <li><strong>Max Font Size (list):</strong> 72 pt | <strong>Max Manual:</strong> 1638 pt</li>
-      </ul>
 
-      <h3>Interface Parts (Most Asked)</h3>
-      <ul>
-        <li>Quick Access Toolbar → Save, Undo, Redo (customizable)</li>
-        <li>Title Bar → Shows document name</li>
-        <li>Ribbon → File, Home, Insert, Design, Layout, References, Mailings, Review, View</li>
-      </ul>
 
-      <h3>File Tab Options</h3>
-      <ul>
-        <li>New (Ctrl+N) • Open (Ctrl+O) • Save (Ctrl+S) • Save As (F12) • Print (Ctrl+P) • Share • Export • Close</li>
-      </ul>
-
-      <h3>Home Tab (Highest Weightage)</h3>
-      <ul>
-        <li><strong>Clipboard:</strong> Cut (Ctrl+X), Copy (Ctrl+C), Paste (Ctrl+V)</li>
-        <li><strong>Font:</strong> Bold (Ctrl+B), Italic (Ctrl+I), Underline (Ctrl+U), Font Dialog (Ctrl+D)</li>
-        <li><strong>Paragraph:</strong>
+{
+  id: "office-complete",
+  title: "Microsoft Office Complete Guide",
+  content: `
+    <div class="office-guide">
+      <h2>Microsoft Office Complete Guide</h2>
+      
+      <section class="main-section" id="ms-word">
+        <h3>MS Word - Complete Guide</h3>
+        
+        <section class="sub-section">
+          <h4>Introduction</h4>
           <ul>
-            <li>Alignment: Left (Ctrl+L), Center (Ctrl+E), Right (Ctrl+R), Justify (Ctrl+J)</li>
-            <li>Line Spacing: 1.0 (Ctrl+1), 1.5 (Ctrl+5), 2.0 (Ctrl+2)</li>
-            <li>Bullets, Numbering, Indent, Shading</li>
+            <li>Word Processing software from Microsoft Corporation</li>
+            <li>Used for creating, editing, and formatting documents</li>
+            <li>File extensions: .doc, .docx</li>
+            <li>Default font: Calibri, size 11</li>
+            <li>Font size range: Minimum 1, Maximum 1638 (manual entry)</li>
+            <li>Default list shows sizes 8 to 72</li>
           </ul>
-        </li>
-      </ul>
+        </section>
 
-      <h3>Insert Tab</h3>
-      <ul>
-        <li>Pages, Tables, Pictures, Shapes, Icons</li>
-        <li><strong>Hyperlink:</strong> Ctrl+K</li>
-        <li><strong>Header & Footer:</strong> Page number, date, title</li>
-        <li><strong>Drop Cap:</strong> Large first letter (newspaper style)</li>
-        <li>Symbols, Equation</li>
-      </ul>
-
-      <h3>Design & Layout</h3>
-      <ul>
-        <li>Design → Themes, Colors, Watermark, Page Color</li>
-        <li>Layout → Margins, Orientation (Portrait/Landscape), Columns, Breaks, Indent</li>
-      </ul>
-
-      <h3>Mailings → Mail Merge (Very Important)</h3>
-      <div class="highlight key">Same letter to multiple recipients with different names/addresses</div>
-
-      <h3>Review Tab</h3>
-      <ul>
-        <li>Spelling & Grammar → <strong>F7</strong></li>
-        <li>Thesaurus, Translate, Track Changes</li>
-      </ul>
-
-      <h3>View Tab</h3>
-      <ul>
-        <li>Zoom (10–500%), Ruler, Macros, Print Layout, Read Mode</li>
-      </ul>
-
-      <h2>All Important Shortcuts (Must Remember)</h2>
-      <table class="comparison-table">
-        <tr>
-          <th>Action</th>
-          <th>Shortcut</th>
-        </tr>
-        <tr>
-          <td>New</td>
-          <td>Ctrl+N</td>
-        </tr>
-        <tr>
-          <td>Open</td>
-          <td>Ctrl+O</td>
-        </tr>
-        <tr>
-          <td>Save</td>
-          <td>Ctrl+S</td>
-        </tr>
-        <tr>
-          <td>Print</td>
-          <td>Ctrl+P</td>
-        </tr>
-        <tr>
-          <td>Close Document</td>
-          <td>Ctrl+W</td>
-        </tr>
-        <tr>
-          <td>Close Word</td>
-          <td>Alt+F4</td>
-        </tr>
-        <tr>
-          <td>Select All</td>
-          <td>Ctrl+A</td>
-        </tr>
-        <tr>
-          <td>Cut / Copy / Paste</td>
-          <td>Ctrl+X / C / V</td>
-        </tr>
-        <tr>
-          <td>Undo / Redo</td>
-          <td>Ctrl+Z / Y</td>
-        </tr>
-        <tr>
-          <td>Bold / Italic / Underline</td>
-          <td>Ctrl+B / I / U</td>
-        </tr>
-        <tr>
-          <td>Font Dialog</td>
-          <td>Ctrl+D</td>
-        </tr>
-        <tr>
-          <td>Find / Replace</td>
-          <td>Ctrl+F / H</td>
-        </tr>
-        <tr>
-          <td>Hyperlink</td>
-          <td>Ctrl+K</td>
-        </tr>
-        <tr>
-          <td>Left / Center / Right / Justify</td>
-          <td>Ctrl+L / E / R / J</td>
-        </tr>
-        <tr>
-          <td>Single / 1.5 / Double Spacing</td>
-          <td>Ctrl+1 / 5 / 2</td>
-        </tr>
-        <tr>
-          <td>Spelling & Grammar</td>
-          <td>F7</td>
-        </tr>
-        <tr>
-          <td>Superscript</td>
-          <td>Ctrl+Shift++</td>
-        </tr>
-        <tr>
-          <td>Subscript</td>
-          <td>Ctrl+=</td>
-        </tr>
-        <tr>
-          <td>Double Underline</td>
-          <td>Ctrl+Shift+D</td>
-        </tr>
-        <tr>
-          <td>Start / End of Document</td>
-          <td>Ctrl+Home / End</td>
-        </tr>
-      </table>
-
-      <h2>Frequently Asked PYQs (SSC | Railway | Banking)</h2>
-      <ul>
-        <li>Default font & size → Calibri, 11</li>
-        <li>Maximum zoom → 500%</li>
-        <li>Spelling check → F7</li>
-        <li>Print Preview → Ctrl+Alt+I or Ctrl+P → Preview</li>
-        <li>Not a paragraph alignment → Precise</li>
-        <li>Not in Font dialog → Double Strikethrough</li>
-        <li>Quick Access Toolbar default → Save, Undo, Redo</li>
-        <li>Watermark → Faint background text (DRAFT, CONFIDENTIAL)</li>
-        <li>Editing → Change content | Formatting → Change appearance</li>
-      </ul>
-    `
-  },
-  {
-    id: "excel-powerpoint",
-    title: "Microsoft Excel & PowerPoint Basics",
-    content: `
-      <h3>Microsoft Excel - Basics</h3>
-      <ul>
-        <li>Excel is a spreadsheet application developed by Microsoft Corporation</li>
-        <li>Layout consists of small boxes called <strong>Cells</strong> (intersection of Row and Column)</li>
-        <li>Horizontal → Row (numbered: 1, 2, 3...)</li>
-        <li>Vertical → Column (lettered: A, B, C...)</li>
-        <li>Active Cell → Currently selected cell with thick border</li>
-        <li>Worksheet → A single sheet containing cells for data entry and manipulation</li>
-        <li>Workbook → A file containing multiple worksheets</li>
-        <li>Maximum worksheet size (Excel 2010+): 1,048,576 rows × 16,384 columns</li>
-        <li>Default worksheets in new workbook: 3 (can be renamed)</li>
-        <li>Rename worksheet: Right-click → Rename</li>
-        <li>Add new worksheet shortcuts: Shift + F11 or Alt + Shift + F1</li>
-      </ul>
-
-      <h3>Cell Referencing in Excel</h3>
-      <ul>
-        <li><strong>Relative Reference</strong> (e.g., A1) → Changes when copied (both column & row adjust)</li>
-        <li><strong>Absolute Reference</strong> (e.g., $A$1) → Never changes (both fixed with $)</li>
-        <li><strong>Mixed Reference</strong>:
+        <section class="sub-section">
+          <h4>Word Interface Components</h4>
           <ul>
-            <li>$A1 → Column fixed, row changes</li>
-            <li>A$1 → Row fixed, column changes</li>
+            <li><strong>Quick Access Toolbar</strong> (Top-left): Save, Undo, Redo</li>
+            <li><strong>Title Bar</strong>: Shows document name</li>
+            <li><strong>Menu Bar/Tab Row</strong>: File, Home, Insert, Design, Layout, Mailings, Review, View</li>
+            <li><strong>Ribbon</strong>: Shows options for selected tab</li>
+            <li><strong>Status Bar</strong>: Page info, word count, zoom</li>
+            <li><strong>Scroll Bars</strong>: Vertical and horizontal navigation</li>
+            <li><strong>Document Area/Page</strong>: Main typing area</li>
           </ul>
-        </li>
-      </ul>
+        </section>
 
-      <h3>Important Excel Functions</h3>
-      <ul>
-        <li>=SUM() → Adds numbers</li>
-        <li>=AVERAGE() → Calculates mean</li>
-        <li>=MAX(), =MIN() → Highest & lowest value</li>
-        <li>=COUNT() → Counts cells with numbers</li>
-        <li>=COUNTA() → Counts non-empty cells</li>
-        <li>=COUNTIF() → Counts with condition</li>
-        <li>=IF() → Logical test (returns value based on true/false)</li>
-        <li>=AND(), =OR(), =NOT() → Logical functions</li>
-        <li>=LOWER(), =UPPER(), =PROPER() → Text case conversion</li>
-        <li>=CONCATENATE() or & → Join text</li>
-        <li>=LEFT(), =RIGHT() → Extract characters</li>
-        <li>=TODAY() → Current date</li>
-        <li>=NOW() → Current date and time</li>
-        <li>=TIME(h,m,s) → Converts to time format</li>
-        <li>=SQRT(), =POWER(), =ABS(), =PRODUCT(), =MOD() → Math functions</li>
-      </ul>
+        <section class="sub-section">
+          <h4>Important Tabs & Functions</h4>
+          
+          <section class="sub-sub-section">
+            <h5>File Tab</h5>
+            <ul>
+              <li>New, Open, Save, Save As, Print, Share, Export, Close, Account</li>
+              <li>Save As: Saves with different name/location</li>
+            </ul>
+          </section>
 
-      <h3>Important Excel Shortcuts</h3>
-      <ul>
-        <li>Ctrl + 0 → Hide column</li>
-        <li>Ctrl + 9 → Hide row</li>
-        <li>Alt + Enter → New line in same cell</li>
-        <li>Ctrl + ; → Insert current date</li>
-        <li>Ctrl + Shift + : → Insert current time</li>
-        <li>Shift + F11 or Alt + Shift + F1 → New worksheet</li>
-        <li>Ctrl + D → Fill down (copy top cell)</li>
-        <li>Ctrl + R → Fill right</li>
-        <li>Ctrl + Shift + L → Toggle filters</li>
-        <li>F2 → Edit cell</li>
-        <li>Ctrl + 1 → Format cells dialog</li>
-      </ul>
+          <section class="sub-sub-section">
+            <h5>Home Tab</h5>
+            <ul>
+              <li>Clipboard: Cut, Copy, Paste, Format Painter</li>
+              <li>Font: Font type, size, bold, italic, underline, color</li>
+              <li>Paragraph: Alignment, indents, spacing, bullets, numbering</li>
+              <li>Styles: Heading styles, text formatting presets</li>
+              <li>Editing: Find, Replace, Select</li>
+            </ul>
+          </section>
 
-      <h3>Microsoft PowerPoint - Basics</h3>
-      <ul>
-        <li>PowerPoint is a presentation software from Microsoft Office</li>
-        <li>Uses graphical slides to present information</li>
-        <li>File extension: .pptx</li>
-        <li>Main tabs: Home, Insert, Design, Transitions, Animations, Slide Show, Review, View</li>
-        <li>New slide shortcut: Ctrl + M</li>
-        <li>Start slideshow: F5 (from beginning), Shift + F5 (from current slide)</li>
-        <li>Insert new slide layout options available in Home tab</li>
-        <li>Design tab → Themes, colors, backgrounds</li>
-        <li>Transitions → Effect when moving between slides</li>
-        <li>Animations → Movement of objects within a slide</li>
-        <li>Slide Show view → Full screen presentation</li>
-      </ul>
+          <section class="sub-sub-section">
+            <h5>Insert Tab</h5>
+            <ul>
+              <li>Pages: Cover Page, Blank Page, Page Break</li>
+              <li>Tables: Insert table, draw table</li>
+              <li>Illustrations: Pictures, Shapes, Icons, 3D Models, SmartArt, Chart</li>
+              <li>Add-ins: Get Add-ins, My Add-ins</li>
+              <li>Media: Online Video</li>
+              <li>Links: Hyperlink, Bookmark, Cross-reference</li>
+              <li>Comments: Insert comments</li>
+              <li>Header & Footer: Header, Footer, Page Number</li>
+              <li>Text: Text Box, WordArt, Drop Cap, Signature Line, Date & Time</li>
+              <li>Symbols: Equation, Symbol</li>
+            </ul>
+          </section>
 
-      <h3>PowerPoint Shortcuts</h3>
-      <ul>
-        <li>Ctrl + M → Insert new slide</li>
-        <li>F5 → Start slideshow from first slide</li>
-        <li>Shift + F5 → Start from current slide</li>
-        <li>Esc → Exit slideshow</li>
-        <li>Ctrl + D → Duplicate slide</li>
-      </ul>
-    `
-  },
+          <section class="sub-sub-section">
+            <h5>Design Tab</h5>
+            <ul>
+              <li>Themes: Pre-designed themes</li>
+              <li>Document Formatting: Styles, colors, fonts, spacing</li>
+              <li>Page Background: Watermark, Page Color, Page Borders</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Layout Tab</h5>
+            <ul>
+              <li>Page Setup: Margins, Orientation (Portrait/Landscape), Size, Columns</li>
+              <li>Paragraph: Indents, Spacing</li>
+              <li>Arrange: Position, Wrap Text, Bring Forward, Send Backward</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Mailings Tab</h5>
+            <ul>
+              <li>Mail Merge: Create letters, envelopes, labels, directory</li>
+              <li>Start Mail Merge: Select document type</li>
+              <li>Select Recipients: Use existing list, create new list</li>
+              <li>Edit Recipient List: Filter and sort recipients</li>
+              <li>Write & Insert Fields: Address block, greeting line, merge fields</li>
+              <li>Preview Results: Check before merging</li>
+              <li>Finish: Complete the merge</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Review Tab</h5>
+            <ul>
+              <li>Proofing: Spelling & Grammar, Thesaurus, Word Count</li>
+              <li>Language: Translate, Language settings</li>
+              <li>Comments: New comment, delete, navigate comments</li>
+              <li>Tracking: Track Changes, Show Markup</li>
+              <li>Changes: Accept, reject changes</li>
+              <li>Compare: Compare documents, combine</li>
+              <li>Protect: Restrict editing, block authors</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>View Tab</h5>
+            <ul>
+              <li>Views: Read Mode, Print Layout, Web Layout, Outline, Draft</li>
+              <li>Zoom: Zoom level, one page, multiple pages</li>
+              <li>Window: New Window, Arrange All, Split</li>
+              <li>Macros: View, record macros</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="sub-section">
+          <h4>Key Features & Functions</h4>
+          <ul>
+            <li><strong>Headers & Footers</strong>: Information at top/bottom of every page (titles, page numbers)</li>
+            <li><strong>Hyperlinks</strong>: Ctrl+K to insert links to webpages or documents</li>
+            <li><strong>Drop Cap</strong>: Large initial letter at paragraph start</li>
+            <li><strong>Watermark</strong>: Background text like "CONFIDENTIAL"</li>
+            <li><strong>Macros</strong>: Record series of commands for repetitive tasks</li>
+            <li><strong>Table of Contents</strong>: Automatic generation from headings</li>
+            <li><strong>Mail Merge</strong>: Merge main document with data source (address list)</li>
+            <li><strong>Track Changes</strong>: Shows edits made by different users</li>
+            <li><strong>Thesaurus</strong>: Find synonyms and antonyms</li>
+            <li><strong>Word Count</strong>: Counts words, characters, paragraphs</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Important Word Shortcuts</h4>
+          <div class="shortcuts-container">
+            <section class="shortcut-category">
+              <h5>Basic Operations</h5>
+              <ul>
+                <li>Ctrl+S: Save</li>
+                <li>Ctrl+C: Copy</li>
+                <li>Ctrl+V: Paste</li>
+                <li>Ctrl+X: Cut</li>
+                <li>Ctrl+Z: Undo</li>
+                <li>Ctrl+Y: Redo</li>
+                <li>Ctrl+N: New document</li>
+                <li>Ctrl+O: Open document</li>
+                <li>Ctrl+P: Print</li>
+                <li>Ctrl+A: Select all</li>
+                <li>Ctrl+W: Close document (not Word)</li>
+                <li>Alt+F4: Close Word application</li>
+              </ul>
+            </section>
+
+            <section class="shortcut-category">
+              <h5>Formatting Shortcuts</h5>
+              <ul>
+                <li>Ctrl+B: Bold</li>
+                <li>Ctrl+I: Italic</li>
+                <li>Ctrl+U: Underline</li>
+                <li>Ctrl+L: Left align</li>
+                <li>Ctrl+E: Center align</li>
+                <li>Ctrl+R: Right align</li>
+                <li>Ctrl+J: Justify align</li>
+                <li>Ctrl+K: Insert hyperlink</li>
+                <li>Ctrl+F1: Show/hide ribbon</li>
+              </ul>
+            </section>
+
+            <section class="shortcut-category">
+              <h5>Navigation & Editing</h5>
+              <ul>
+                <li>Ctrl+F: Find</li>
+                <li>Ctrl+H: Replace</li>
+                <li>Ctrl+Home: Go to document beginning</li>
+                <li>Ctrl+End: Go to document end</li>
+                <li>Ctrl+Enter: Insert page break</li>
+                <li>Shift+F3: Change case</li>
+                <li>F7: Spelling & grammar check</li>
+                <li>F12: Save As</li>
+                <li>Double-click word: Select word</li>
+                <li>Triple-click paragraph: Select paragraph</li>
+                <li>Ctrl+Backspace: Delete entire word left</li>
+                <li>Ctrl+Delete: Delete entire word right</li>
+              </ul>
+            </section>
+
+            <section class="shortcut-category">
+              <h5>Spacing & Font Size</h5>
+              <ul>
+                <li>Ctrl+1: Single line spacing</li>
+                <li>Ctrl+2: Double line spacing</li>
+                <li>Ctrl+5: 1.5 line spacing</li>
+                <li>Ctrl+0: Remove paragraph spacing</li>
+                <li>Ctrl+Shift+&gt;: Increase font size</li>
+                <li>Ctrl+Shift+&lt;: Decrease font size</li>
+                <li>Ctrl+]: Increase font size by 1pt</li>
+                <li>Ctrl+[: Decrease font size by 1pt</li>
+                <li>Ctrl+Shift++: Superscript</li>
+                <li>Ctrl++: Subscript (without Shift)</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="sub-section">
+          <h4>Formatting & Editing</h4>
+          <ul>
+            <li><strong>Editing</strong>: Changing data/content values</li>
+            <li><strong>Formatting</strong>: Changing appearance (font, size, alignment)</li>
+            <li><strong>Alignment Types</strong>:
+              <section class="alignment-types">
+                <ul>
+                  <li>Left: Default for text</li>
+                  <li>Right: Default for numbers</li>
+                  <li>Center: For headings/titles</li>
+                  <li>Justified: Even margins on both sides (official letters)</li>
+                </ul>
+              </section>
+            </li>
+            <li><strong>Indentation</strong>: Space from margin to text start</li>
+            <li><strong>Line Spacing</strong>: Space between lines</li>
+            <li><strong>Paragraph Spacing</strong>: Space before/after paragraphs</li>
+            <li><strong>Bullets & Numbering</strong>: Lists</li>
+            <li><strong>Borders & Shading</strong>: Add borders to text/pages</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Document Elements</h4>
+          <ul>
+            <li><strong>Margins</strong>: Space around page edges</li>
+            <li><strong>Gutter Margin</strong>: Extra margin for binding</li>
+            <li><strong>Columns</strong>: Multiple text columns (like newspapers)</li>
+            <li><strong>Section Breaks</strong>: Divide document into sections with different formatting</li>
+            <li><strong>Page Breaks</strong>: Force new page</li>
+            <li><strong>Column Breaks</strong>: Force new column</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Special Features</h4>
+          <ul>
+            <li><strong>Maximum columns in table</strong>: 63</li>
+            <li><strong>Zoom range</strong>: Minimum 10%, Maximum 500%</li>
+            <li><strong>Superscript</strong>: Ctrl+Shift++ (e.g., x²)</li>
+            <li><strong>Subscript</strong>: Ctrl++ (e.g., x₂)</li>
+            <li><strong>Thesaurus shortcut</strong>: Shift+F7</li>
+            <li><strong>Word count display</strong>: Status bar</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="main-section" id="ms-excel">
+        <h3>MS Excel - Complete Guide</h3>
+        
+        <section class="sub-section">
+          <h4>Introduction</h4>
+          <ul>
+            <li>Spreadsheet application developed by Microsoft Corporation</li>
+            <li>Used for numerical data, calculations, charts, data analysis</li>
+            <li>File extensions: .xls, .xlsx</li>
+            <li>Programming language: Visual Basic for Applications (VBA)</li>
+            <li>Default font: Calibri, size 11</li>
+            <li>Default alignment: Text → Left, Numbers → Right</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Excel Interface Components</h4>
+          <ul>
+            <li><strong>Cell</strong>: Intersection of row and column (e.g., A1)</li>
+            <li><strong>Active Cell</strong>: Currently selected cell with thick border</li>
+            <li><strong>Formula Bar</strong>: Shows content/formula of active cell</li>
+            <li><strong>Row</strong>: Horizontal, numbered (1, 2, 3...)</li>
+            <li><strong>Column</strong>: Vertical, lettered (A, B, C...)</li>
+            <li><strong>Worksheet</strong>: Single sheet containing cells</li>
+            <li><strong>Workbook</strong>: File containing multiple worksheets</li>
+            <li><strong>Name Box</strong>: Shows address of active cell</li>
+            <li><strong>Sheet Tabs</strong>: Tabs at bottom for different worksheets</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Worksheet Specifications</h4>
+          <ul>
+            <li>Maximum rows: 1,048,576 (Excel 2010+)</li>
+            <li>Maximum columns: 16,384 (Excel 2010+)</li>
+            <li>Maximum worksheets per workbook: 255</li>
+            <li>Default worksheets in new workbook: 3</li>
+            <li>Character limit per cell: 32,767 characters</li>
+            <li>Font size range: 1-409 (manual entry)</li>
+            <li>Default shows 8-72 in list</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Cell Referencing</h4>
+          <ul>
+            <li><strong>Relative Reference</strong> (A1): Changes when copied</li>
+            <li><strong>Absolute Reference</strong> ($A$1): Never changes (fixed with $)</li>
+            <li><strong>Mixed Reference</strong>:
+              <section class="mixed-reference">
+                <ul>
+                  <li>$A1: Column fixed, row changes</li>
+                  <li>A$1: Row fixed, column changes</li>
+                </ul>
+              </section>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Important Excel Functions</h4>
+          
+          <section class="function-category">
+            <h5>Math Functions</h5>
+            <ul>
+              <li>=SUM(): Adds numbers</li>
+              <li>=AVERAGE(): Calculates mean</li>
+              <li>=MAX(), =MIN(): Highest/lowest value</li>
+              <li>=COUNT(): Counts cells with numbers</li>
+              <li>=COUNTA(): Counts non-empty cells</li>
+              <li>=COUNTIF(): Counts with condition</li>
+              <li>=SUMIF(): Sums with condition</li>
+              <li>=PRODUCT(): Multiplies numbers</li>
+              <li>=MOD(): Returns remainder</li>
+              <li>=ABS(): Absolute value</li>
+              <li>=SQRT(): Square root</li>
+              <li>=POWER(): Raises number to power</li>
+              <li>=ROUND(): Rounds to specified decimals</li>
+              <li>=FLOOR(): Rounds down to nearest multiple</li>
+              <li>=CEILING(): Rounds up to nearest multiple</li>
+              <li>=EVEN(), =ODD(): Rounds to even/odd number</li>
+            </ul>
+          </section>
+
+          <section class="function-category">
+            <h5>Logical Functions</h5>
+            <ul>
+              <li>=IF(): Returns value based on condition</li>
+              <li>=AND(): TRUE if all conditions true</li>
+              <li>=OR(): TRUE if any condition true</li>
+              <li>=NOT(): Returns opposite logical value</li>
+            </ul>
+          </section>
+
+          <section class="function-category">
+            <h5>Text Functions</h5>
+            <ul>
+              <li>=LOWER(): Converts to lowercase</li>
+              <li>=UPPER(): Converts to uppercase</li>
+              <li>=PROPER(): Capitalizes first letter of each word</li>
+              <li>=CONCATENATE() or &: Joins text</li>
+              <li>=LEFT(): Extracts left characters</li>
+              <li>=RIGHT(): Extracts right characters</li>
+              <li>=LEN(): Counts characters</li>
+              <li>=TRIM(): Removes extra spaces</li>
+            </ul>
+          </section>
+
+          <section class="function-category">
+            <h5>Date & Time Functions</h5>
+            <ul>
+              <li>=TODAY(): Current date</li>
+              <li>=NOW(): Current date and time</li>
+              <li>=DATE(): Creates date from year, month, day</li>
+              <li>=TIME(): Creates time from hour, minute, second</li>
+              <li>=DAY(), =MONTH(), =YEAR(): Extracts date parts</li>
+            </ul>
+          </section>
+
+          <section class="function-category">
+            <h5>Lookup Functions</h5>
+            <ul>
+              <li>=VLOOKUP(): Vertical lookup</li>
+              <li>=HLOOKUP(): Horizontal lookup</li>
+              <li>=INDEX(): Returns value at intersection</li>
+              <li>=MATCH(): Returns position of item</li>
+            </ul>
+          </section>
+
+          <section class="function-category">
+            <h5>Other Functions</h5>
+            <ul>
+              <li>=EXACT(): Checks exact match</li>
+              <li>=ISNUMBER(): Checks if value is number</li>
+              <li>=ISTEXT(): Checks if value is text</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="sub-section">
+          <h4>Important Excel Shortcuts</h4>
+          
+          <section class="shortcut-category">
+            <h5>Navigation</h5>
+            <ul>
+              <li>Ctrl+Arrow keys: Move to edge of data region</li>
+              <li>Ctrl+Home: Go to A1</li>
+              <li>Ctrl+End: Go to last used cell</li>
+              <li>Page Up/Down: Move one screen up/down</li>
+              <li>Alt+Page Up/Down: Move one screen left/right</li>
+            </ul>
+          </section>
+
+          <section class="shortcut-category">
+            <h5>Selection</h5>
+            <ul>
+              <li>Ctrl+A: Select entire worksheet</li>
+              <li>Ctrl+Space: Select entire column</li>
+              <li>Shift+Space: Select entire row</li>
+              <li>Shift+Arrow keys: Extend selection</li>
+              <li>Ctrl+Shift+Arrow keys: Extend selection to edge</li>
+            </ul>
+          </section>
+
+          <section class="shortcut-category">
+            <h5>Editing</h5>
+            <ul>
+              <li>F2: Edit active cell</li>
+              <li>Ctrl+Enter: Fill selected cells with same data</li>
+              <li>Alt+Enter: New line within same cell</li>
+              <li>Ctrl+D: Fill down (copy from cell above)</li>
+              <li>Ctrl+R: Fill right (copy from cell left)</li>
+              <li>Ctrl+;: Insert current date</li>
+              <li>Ctrl+Shift+;: Insert current time</li>
+              <li>Ctrl+Shift+": Copy value from cell above</li>
+            </ul>
+          </section>
+
+          <section class="shortcut-category">
+            <h5>Formatting</h5>
+            <ul>
+              <li>Ctrl+1: Format Cells dialog</li>
+              <li>Ctrl+B: Bold</li>
+              <li>Ctrl+I: Italic</li>
+              <li>Ctrl+U: Underline</li>
+              <li>Ctrl+5: Strikethrough</li>
+            </ul>
+          </section>
+
+          <section class="shortcut-category">
+            <h5>Worksheet Management</h5>
+            <ul>
+              <li>Shift+F11: Insert new worksheet</li>
+              <li>Ctrl+Page Up/Down: Move between worksheets</li>
+              <li>Alt+O+H+R: Rename worksheet</li>
+            </ul>
+          </section>
+
+          <section class="shortcut-category">
+            <h5>Other</h5>
+            <ul>
+              <li>Ctrl+0: Hide column</li>
+              <li>Ctrl+9: Hide row</li>
+              <li>Ctrl+Shift+0: Unhide column</li>
+              <li>Ctrl+Shift+9: Unhide row</li>
+              <li>Ctrl+F: Find</li>
+              <li>Ctrl+H: Replace</li>
+              <li>Ctrl+G or F5: Go To</li>
+              <li>F4: Repeat last action or toggle absolute/relative reference</li>
+              <li>F7: Spelling check</li>
+              <li>F9: Calculate all worksheets</li>
+              <li>Shift+F9: Calculate active worksheet</li>
+              <li>Ctrl+F3: Define name</li>
+              <li>Ctrl+Shift+F3: Create names from selection</li>
+              <li>Ctrl+Shift+L: Toggle filters</li>
+              <li>Alt+=: AutoSum</li>
+              <li>Ctrl+Shift+~: General number format</li>
+              <li>Ctrl+Shift+$: Currency format</li>
+              <li>Ctrl+Shift+%: Percentage format</li>
+              <li>Ctrl+Shift+#: Date format</li>
+              <li>Ctrl+Shift+@: Time format</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="sub-section">
+          <h4>Excel Features</h4>
+          <ul>
+            <li><strong>Filters</strong>: Sort and filter data</li>
+            <li><strong>Charts</strong>: Column, Line, Pie, Bar, Area, Scatter charts</li>
+            <li><strong>PivotTables</strong>: Summarize and analyze data</li>
+            <li><strong>Data Validation</strong>: Restrict data entry</li>
+            <li><strong>Conditional Formatting</strong>: Format cells based on conditions</li>
+            <li><strong>Freeze Panes</strong>: Keep rows/columns visible while scrolling</li>
+            <li><strong>Split</strong>: Divide window into panes</li>
+            <li><strong>Formulas</strong>: Start with = sign</li>
+            <li><strong>Functions</strong>: Predefined formulas</li>
+            <li><strong>AutoFill</strong>: Fill series or copy formulas</li>
+            <li><strong>Flash Fill</strong>: Automatically fill data based on pattern</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="main-section" id="ms-powerpoint">
+        <h3>MS PowerPoint - Complete Guide</h3>
+        
+        <section class="sub-section">
+          <h4>Introduction</h4>
+          <ul>
+            <li>Presentation software from Microsoft Office</li>
+            <li>Used for creating slideshows with text, images, multimedia</li>
+            <li>File extensions: .ppt, .pptx</li>
+            <li>Graphical approach for visual presentations</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>PowerPoint Interface Components</h4>
+          <ul>
+            <li><strong>Slide</strong>: Individual page in presentation</li>
+            <li><strong>Slide Pane</strong>: Main area for editing slides</li>
+            <li><strong>Notes Pane</strong>: Area for speaker notes</li>
+            <li><strong>Slide Thumbnails</strong>: Miniature views of slides</li>
+            <li><strong>Outline View</strong>: Text content in outline form</li>
+            <li><strong>Slide Sorter</strong>: View all slides as thumbnails</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Important Tabs & Functions</h4>
+          
+          <section class="sub-sub-section">
+            <h5>Home Tab</h5>
+            <ul>
+              <li>New Slide, Layout, Reset, Section</li>
+              <li>Clipboard: Cut, Copy, Paste, Format Painter</li>
+              <li>Slides: New slide, slide layout, reset, section</li>
+              <li>Font: Font type, size, style, color</li>
+              <li>Paragraph: Alignment, lists, spacing, columns</li>
+              <li>Drawing: Shapes, arrange, quick styles</li>
+              <li>Editing: Find, Replace, Select</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Insert Tab</h5>
+            <ul>
+              <li>Tables: Insert table</li>
+              <li>Images: Pictures, Online Pictures, Screenshot, Photo Album</li>
+              <li>Illustrations: Shapes, Icons, 3D Models, SmartArt, Chart</li>
+              <li>Add-ins: Get Add-ins</li>
+              <li>Links: Hyperlink, Action</li>
+              <li>Comments: New comment</li>
+              <li>Text: Text Box, Header & Footer, WordArt, Date & Time, Slide Number, Object</li>
+              <li>Symbols: Equation, Symbol</li>
+              <li>Media: Video, Audio, Screen Recording</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Design Tab</h5>
+            <ul>
+              <li>Themes: Pre-designed themes</li>
+              <li>Variants: Color variations of themes</li>
+              <li>Customize: Slide size, format background</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Transitions Tab</h5>
+            <ul>
+              <li>Transition to This Slide: Different transition effects</li>
+              <li>Timing: Duration, sound, advance slide</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Animations Tab</h5>
+            <ul>
+              <li>Animation Styles: Entrance, emphasis, exit, motion paths</li>
+              <li>Timing: Start, duration, delay, reorder</li>
+              <li>Advanced Animation: Add animation, animation pane, trigger</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Slide Show Tab</h5>
+            <ul>
+              <li>Start Slide Show: From beginning, from current slide</li>
+              <li>Set Up: Set up slide show, rehearse timings, record slide show</li>
+              <li>Monitors: Presenter view, monitor selection</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Review Tab</h5>
+            <ul>
+              <li>Proofing: Spelling, thesaurus, research</li>
+              <li>Language: Translate, language</li>
+              <li>Comments: New, delete, navigate comments</li>
+              <li>Compare: Compare presentations</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>View Tab</h5>
+            <ul>
+              <li>Presentation Views: Normal, Outline, Slide Sorter, Notes Page, Reading View</li>
+              <li>Master Views: Slide Master, Handout Master, Notes Master</li>
+              <li>Show: Ruler, gridlines, guides, notes</li>
+              <li>Zoom: Zoom level, fit to window</li>
+              <li>Color/Grayscale: Color, grayscale, black and white</li>
+              <li>Window: New window, arrange, cascade, switch windows</li>
+              <li>Macros: View macros</li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="sub-section">
+          <h4>Important PowerPoint Shortcuts</h4>
+          <div class="shortcuts-container">
+            <section class="shortcut-category">
+              <h5>Presentation Control</h5>
+              <ul>
+                <li>F5: Start slideshow from beginning</li>
+                <li>Shift+F5: Start from current slide</li>
+                <li>Esc: End slideshow</li>
+                <li>Number+Enter: Go to slide number</li>
+                <li>B or .: Black screen during presentation</li>
+                <li>W or ,: White screen during presentation</li>
+                <li>S: Stop/restart slideshow</li>
+                <li>E: Erase drawing during presentation</li>
+                <li>H: Go to hidden slide</li>
+              </ul>
+            </section>
+
+            <section class="shortcut-category">
+              <h5>Slide Management</h5>
+              <ul>
+                <li>Ctrl+M: Insert new slide</li>
+                <li>Ctrl+D: Duplicate slide/object</li>
+                <li>Page Down/Right Arrow: Next slide</li>
+                <li>Page Up/Left Arrow: Previous slide</li>
+              </ul>
+            </section>
+
+            <section class="shortcut-category">
+              <h5>Basic Operations</h5>
+              <ul>
+                <li>Ctrl+N: New presentation</li>
+                <li>Ctrl+O: Open presentation</li>
+                <li>Ctrl+S: Save presentation</li>
+                <li>Ctrl+P: Print</li>
+                <li>Ctrl+Z: Undo</li>
+                <li>Ctrl+Y: Redo</li>
+                <li>Ctrl+C: Copy</li>
+                <li>Ctrl+V: Paste</li>
+                <li>Ctrl+X: Cut</li>
+                <li>Ctrl+A: Select all</li>
+              </ul>
+            </section>
+
+            <section class="shortcut-category">
+              <h5>Formatting</h5>
+              <ul>
+                <li>Ctrl+B: Bold</li>
+                <li>Ctrl+I: Italic</li>
+                <li>Ctrl+U: Underline</li>
+                <li>Ctrl+E: Center align</li>
+                <li>Ctrl+L: Left align</li>
+                <li>Ctrl+R: Right align</li>
+                <li>Ctrl+[: Decrease font size</li>
+                <li>Ctrl+]: Increase font size</li>
+                <li>Ctrl+Shift+&gt;: Increase font size more</li>
+                <li>Ctrl+Shift+&lt;: Decrease font size more</li>
+                <li>Ctrl+F: Find</li>
+                <li>Ctrl+H: Replace</li>
+                <li>Ctrl+K: Insert hyperlink</li>
+                <li>Ctrl+T: Font dialog</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="sub-section">
+          <h4>Presentation Views</h4>
+          <ul>
+            <li><strong>Normal View</strong>: Default editing view</li>
+            <li><strong>Outline View</strong>: Shows text content in outline</li>
+            <li><strong>Slide Sorter</strong>: Thumbnails of all slides</li>
+            <li><strong>Notes Page</strong>: Slide with speaker notes</li>
+            <li><strong>Reading View</strong>: Full-screen view without presenter tools</li>
+            <li><strong>Slide Show</strong>: Full-screen presentation mode</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>PowerPoint Features</h4>
+          <ul>
+            <li><strong>Slide Layouts</strong>: Title slide, title and content, section header, etc.</li>
+            <li><strong>Themes</strong>: Pre-designed color/font schemes</li>
+            <li><strong>Transitions</strong>: Effects between slides</li>
+            <li><strong>Animations</strong>: Effects on slide elements</li>
+            <li><strong>SmartArt</strong>: Visual diagrams</li>
+            <li><strong>Charts</strong>: Graphical data representation</li>
+            <li><strong>Multimedia</strong>: Audio, video insertion</li>
+            <li><strong>Action Buttons</strong>: Interactive buttons</li>
+            <li><strong>Hyperlinks</strong>: Links to slides, files, webpages</li>
+            <li><strong>Presenter View</strong>: Special view for presenters with notes and timer</li>
+            <li><strong>Rehearse Timings</strong>: Practice and set slide timings</li>
+            <li><strong>Record Slide Show</strong>: Record narration and timings</li>
+            <li><strong>Slide Master</strong>: Global formatting for all slides</li>
+            <li><strong>Handouts</strong>: Print multiple slides per page</li>
+            <li><strong>Notes</strong>: Speaker notes for each slide</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="main-section" id="ms-access">
+        <h3>MS Access - Complete Guide</h3>
+        
+        <section class="sub-section">
+          <h4>Introduction</h4>
+          <ul>
+            <li>Database management system from Microsoft Office</li>
+            <li>Used for storing, managing, and linking large datasets</li>
+            <li>File extensions: .mdb, .accdb</li>
+            <li>Manages related data (e.g., salary systems, inventories)</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Access Components</h4>
+          <ul>
+            <li><strong>Tables</strong>: Store data in rows and columns</li>
+            <li><strong>Queries</strong>: Retrieve and manipulate data</li>
+            <li><strong>Forms</strong>: User interface for data entry</li>
+            <li><strong>Reports</strong>: Present data in formatted manner</li>
+            <li><strong>Macros</strong>: Automate tasks</li>
+            <li><strong>Modules</strong>: VBA programming code</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Key Features</h4>
+          <ul>
+            <li><strong>Relational Database</strong>: Links data between tables</li>
+            <li><strong>Data Validation</strong>: Ensures data accuracy</li>
+            <li><strong>Forms & Reports</strong>: User-friendly data interaction</li>
+            <li><strong>Query Wizard</strong>: Easy query creation</li>
+            <li><strong>Import/Export</strong>: Exchange data with other applications</li>
+            <li><strong>Security</strong>: User-level security features</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="main-section" id="other-apps">
+        <h3>Other Microsoft Office Applications</h3>
+        
+        <section class="sub-section">
+          <h4>MS Publisher - Overview</h4>
+          <ul>
+            <li>Desktop publishing software</li>
+            <li>Used for creating brochures, newsletters, magazines</li>
+            <li>Professional print material design</li>
+            <li>Layout and formatting for printed materials</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>MS Outlook - Overview</h4>
+          <ul>
+            <li>Email client software</li>
+            <li>Used for sending and receiving emails</li>
+            <li>Part of Microsoft Office suite</li>
+            <li>Alternative to webmail services like Gmail</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="main-section" id="general-info">
+        <h3>General MS Office Information</h3>
+        
+        <section class="sub-section">
+          <h4>Versions History</h4>
+          <ul>
+            <li>2003: First major version (4-year gap from previous)</li>
+            <li>2007: Ribbon interface introduced</li>
+            <li>2010, 2013, 2016, 2019: 3-year release cycles</li>
+            <li>Office 365: Subscription-based, cloud-integrated</li>
+            <li>Most used version: Office 2016</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Office 365 Features</h4>
+          <ul>
+            <li>Subscription-based model</li>
+            <li>Cloud integration (OneDrive)</li>
+            <li>Real-time collaboration</li>
+            <li>Continuous updates</li>
+            <li>Access from multiple devices</li>
+            <li>Data stored in cloud</li>
+          </ul>
+        </section>
+
+        <section class="sub-section">
+          <h4>Common Office Features</h4>
+          
+          <section class="sub-sub-section">
+            <h5>Ribbon Interface</h5>
+            <ul>
+              <li>Introduced in Office 2007</li>
+              <li>Replaced traditional menus and toolbars</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>File Formats</h5>
+            <ul>
+              <li><strong>Word:</strong> .doc, .docx</li>
+              <li><strong>Excel:</strong> .xls, .xlsx</li>
+              <li><strong>PowerPoint:</strong> .ppt, .pptx</li>
+              <li><strong>Access:</strong> .mdb, .accdb</li>
+            </ul>
+          </section>
+
+          <section class="sub-sub-section">
+            <h5>Common Shortcuts</h5>
+            <div class="shortcuts-container">
+              <section class="shortcut-category">
+                <h6>Universal Shortcuts</h6>
+                <ul>
+                  <li>Ctrl+S: Save</li>
+                  <li>Ctrl+C: Copy</li>
+                  <li>Ctrl+V: Paste</li>
+                  <li>Ctrl+X: Cut</li>
+                  <li>Ctrl+Z: Undo</li>
+                  <li>Ctrl+Y: Redo</li>
+                  <li>Ctrl+P: Print</li>
+                  <li>Ctrl+F: Find</li>
+                  <li>Ctrl+H: Replace</li>
+                  <li>Ctrl+N: New</li>
+                </ul>
+              </section>
+
+              <section class="shortcut-category">
+                <h6>Application Control</h6>
+                <ul>
+                  <li>Ctrl+O: Open</li>
+                  <li>Ctrl+W: Close window/document</li>
+                  <li>Alt+F4: Close application</li>
+                  <li>F1: Help</li>
+                  <li>F12: Save As</li>
+                </ul>
+              </section>
+            </div>
+          </section>
+        </section>
+      </section>
+    </div>
+
+    <style>
+    .office-guide {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .main-section {
+      margin: 40px 0;
+      padding: 25px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      border-left: 5px solid #2b579a;
+    }
+    
+    .main-section h3 {
+      color: #2b579a;
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eaeaea;
+      font-size: 1.8em;
+    }
+    
+    .sub-section {
+      margin: 25px 0;
+      padding: 20px;
+      background: white;
+      border-radius: 6px;
+      border: 1px solid #eaeaea;
+    }
+    
+    .sub-section h4 {
+      color: #444;
+      margin-top: 0;
+      font-size: 1.4em;
+    }
+    
+    .sub-sub-section {
+      margin: 15px 0;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 4px;
+      border-left: 3px solid #5d9cec;
+    }
+    
+    .sub-sub-section h5 {
+      color: #555;
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+    
+    .function-category,
+    .shortcut-category {
+      margin: 15px 0;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 4px;
+    }
+    
+    .shortcuts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 15px;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    strong {
+      color: #2b579a;
+    }
+    
+    @media (max-width: 768px) {
+      .main-section {
+        padding: 15px;
+        margin: 20px 0;
+      }
+      
+      .sub-section {
+        padding: 15px;
+      }
+      
+      .shortcuts-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    </style>
+  `
+},
+
   {
     id: "abbreviations",
     title: "Important Abbreviations",
